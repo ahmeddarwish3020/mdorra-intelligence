@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#edeae3"/>
+  <rect x="180" y="150" width="400" height="500" fill="#dad5cb"/>
+  <rect x="620" y="220" width="380" height="430" fill="#f7f5f1" stroke="#dad5cb" stroke-width="2"/>
+  <rect x="200" y="170" width="120" height="90" fill="#8a6a4b" opacity="0.85"/>
+  <text x="1200" y="770" text-anchor="end" font-family="monospace" font-size="18" fill="#6e685f">PLACEHOLDER — REPLACE WITH PROJECT COVER</text>
+</svg>

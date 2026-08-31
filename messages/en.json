@@ -1,0 +1,351 @@
+{
+  "NotFoundPage": {
+    "title": "Page not found.",
+    "body": "The page you are looking for does not exist or has moved.",
+    "viewWork": "View selected work",
+    "returnHome": "Return home"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menuLabel": "Site navigation",
+    "navPrimary": "Primary",
+    "navMenu": "Menu",
+    "navFooter": "Footer",
+    "viewProject": "View project",
+    "viewAllWork": "View all work",
+    "getInTouch": "Get in touch",
+    "nav": {
+      "work": "Work",
+      "services": "Services",
+      "studio": "Studio",
+      "process": "Process",
+      "beforeAfter": "Before / After",
+      "faq": "FAQ",
+      "contact": "Contact"
+    },
+    "footer": {
+      "tagline": "Architecture · Interiors · Execution",
+      "sitemap": "Sitemap",
+      "enquiries": "Enquiries",
+      "enquiriesNote": "Commissions are accepted selectively.",
+      "copyright": "All rights reserved."
+    }
+  },
+  "home": {
+    "hero": {
+      "index": "Architecture · Interiors · Execution",
+      "title": "Design beyond the brief.",
+      "statement": "MDORRA is a design studio for architecture and interiors. We take the brief further, define a stronger direction, and develop it with construction in mind — from first sketch to final detail on site.",
+      "meta": "Commissions accepted selectively",
+      "cta": "View selected work",
+      "scroll": "Scroll"
+    },
+    "statement": {
+      "eyebrow": "Studio",
+      "index": "01",
+      "quote": "A project is a single continuous decision. Architecture, interiors and construction are developed together — not handed from one discipline to the next.",
+      "body": "A brief is a starting point. We develop it into what the project should be — stronger than the initial idea, and resolved to the last detail. Design is not finished until it is built, so every decision is made with the reality of construction in mind.",
+      "signal": "Design intelligence — technical credibility — quiet execution."
+    },
+    "services": {
+      "eyebrow": "Services",
+      "index": "03",
+      "title": "One studio across the full delivery of a project.",
+      "lead": "Design-led services, every one developed with the reality of construction in mind.",
+      "strip": ["Design", "Visualization", "Technical Design", "Execution capability"],
+      "rows": [
+        {
+          "index": "01",
+          "title": "Architecture",
+          "description": "Architecture as a design discipline — massing, plan, façade and space resolved with intent."
+        },
+        {
+          "index": "02",
+          "title": "Interior Design",
+          "description": "Interior architecture, material and lighting studies, furniture and joinery design."
+        },
+        {
+          "index": "03",
+          "title": "Concept Development",
+          "description": "The idea comes first. Concepts are tested, argued and strengthened before they are developed."
+        },
+        {
+          "index": "04",
+          "title": "Space Planning",
+          "description": "Plans resolved around how a space is actually used — movement, light and proportion."
+        },
+        {
+          "index": "05",
+          "title": "Design Development",
+          "description": "The design developed in depth — materials, details and finishes decided in step."
+        },
+        {
+          "index": "06",
+          "title": "Technical Design",
+          "description": "Working drawings and construction documentation — the design translated so it can be built as intended."
+        },
+        {
+          "index": "07",
+          "title": "Design Visualization",
+          "description": "3D visualization used to test and communicate decisions before anything is built."
+        }
+      ]
+    },
+    "work": {
+      "eyebrow": "Selected Work",
+      "index": "02",
+      "title": "Selected work",
+      "emptyLabel": "Portfolio — selective documentation",
+      "empty": "The portfolio is curated, not accumulated. MDORRA documents each commission on its own terms — work is released here as it is delivered."
+    },
+"beforeAfter": {
+      "eyebrow": "Before / After",
+      "index": "04",
+      "title": "The transformation is the point.",
+      "lead": "A selected project shown before and after design and execution.",
+      "emptyLabel": "Before / After study",
+      "empty": "Transformations are documented on selected commissions. A study will be released here when one is published."
+    },
+    "process": {
+      "eyebrow": "Process",
+      "index": "05",
+      "title": "From brief to reality.",
+      "lead": "A defined process — we take a brief, set a direction, and develop it into a resolved, buildable design.",
+      "stages": [
+        {
+          "index": "01",
+          "title": "Brief",
+          "description": "The project begins with the essential questions — intent, site, constraints. We study them before a line is drawn."
+        },
+        {
+          "index": "02",
+          "title": "Direction",
+          "description": "One clear design direction, agreed with the client. Decisions are made together, not presented as surprises."
+        },
+        {
+          "index": "03",
+          "title": "Design",
+          "description": "Architecture and interiors developed as one discipline — plans, materials, light and detail resolved in step."
+        },
+        {
+          "index": "04",
+          "title": "Development",
+          "description": "Technical development and coordination. The design is documented so what is agreed is what is built."
+        },
+        {
+          "index": "05",
+          "title": "Delivery",
+          "description": "The studio remains involved through execution, ensuring the built result matches the design."
+        }
+      ]
+    },
+    "cta": {
+    "eyebrow": "Enquiries",
+    "index": "06",
+    "title": "Serious projects deserve serious design.",
+    "body": "If you are commissioning a villa, an apartment or a commercial space that demands a stronger result, begin with a conversation.",
+    "primary": "Start your project",
+    "secondary": "View selected work"
+  }
+  },
+  "work": {
+    "eyebrow": "Selected Work",
+    "title": "Selected work",
+    "lead": "A curated index of projects across architecture, interiors and execution.",
+    "emptyLabel": "Portfolio — selective documentation",
+    "empty": "The portfolio is curated, not accumulated. MDORRA documents each commission on its own terms — work is released here as it is delivered."
+  },
+  "project": {
+    "labels": {
+      "client": "Client",
+      "clientType": "Client type",
+      "location": "Location",
+      "year": "Year",
+      "size": "Size",
+      "type": "Type",
+      "disciplines": "Disciplines",
+      "services": "Services",
+      "scope": "Scope",
+      "before": "Before",
+      "after": "After"
+    },
+    "sections": {
+      "summary": "Summary",
+      "overview": "Project overview",
+      "approach": "Design approach",
+      "gallery": "Gallery",
+      "drawings": "Technical drawings",
+      "materials": "Materials",
+      "beforeAfter": "Before / After",
+      "process": "Process & execution",
+      "credits": "Credits"
+    },
+    "next": "Next project"
+  },
+  "studio": {
+    "eyebrow": "Studio",
+    "title": "A practice built around the project.",
+    "body": "MDORRA is a design studio for architecture and interiors, with real execution experience behind it. Architecture, interiors and construction are developed as one continuous discipline — the design is not complete until it is built, and the construction is not complete until it is designed.",
+    "principles": [
+      {
+        "index": "01",
+        "title": "Design",
+        "body": "Every commission begins with study — of site, use, material and light. The answer is found in the problem."
+      },
+      {
+        "index": "02",
+        "title": "Engineering",
+        "body": "Decisions are resolved on the drawing board and in the detail. Technical precision is part of the aesthetic."
+      },
+      {
+        "index": "03",
+        "title": "Execution",
+        "body": "The studio stays with the project until the final installation, so the built work matches the intended design."
+      }
+    ]
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "What the studio delivers.",
+    "lead": "Design-led services across architecture and interiors — every deliverable developed with the reality of construction in mind.",
+    "rows": [
+      {
+        "index": "01",
+        "title": "Architecture",
+        "description": "Architecture as a design discipline — massing, plan, façade and space resolved with intent."
+      },
+      {
+        "index": "02",
+        "title": "Interior Design",
+        "description": "Interior architecture, material and lighting studies, furniture and joinery design."
+      },
+      {
+        "index": "03",
+        "title": "Concept Development",
+        "description": "The idea comes first. Concepts are tested, argued and strengthened before they are developed."
+      },
+      {
+        "index": "04",
+        "title": "Space Planning",
+        "description": "Plans resolved around how a space is actually used — movement, light and proportion."
+      },
+      {
+        "index": "05",
+        "title": "Design Development",
+        "description": "The design developed in depth — materials, details and finishes decided in step."
+      },
+      {
+        "index": "06",
+        "title": "Technical Design",
+        "description": "Working drawings and construction documentation — the design translated so it can be built as intended."
+      },
+      {
+        "index": "07",
+        "title": "Design Visualization",
+        "description": "3D visualization used to test and communicate decisions before anything is built."
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Enquiries",
+    "title": "Tell us about your project.",
+    "body": "MDORRA takes on commissions across architecture and interiors — from villas and high-end apartments to offices and commercial spaces. Commissions are selective; projects where design matters come first.",
+    "channelsLabel": "Reach the studio directly",
+    "email": "Write to the studio",
+    "whatsApp": "Message on WhatsApp",
+    "phone": "Call the studio",
+    "channelsEmpty": "Commissions are accepted selectively and begin with a direct conversation. The studio's email, WhatsApp and social channels are listed here as they open.",
+    "note": "We respond to serious enquiries within a few working days.",
+    "startingTitle": "A useful first message covers",
+    "starting": [
+      "The type of project — villa, apartment, office or commercial space.",
+      "The location and approximate scope.",
+      "The stage — a new build, a renovation, or an existing space to transform.",
+      "Your timeline and how the design should be developed."
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Practical answers.",
+    "lead": "Straight answers for commissioning a serious design project.",
+    "items": [
+      {
+        "q": "Does the studio accept every project?",
+        "a": "No. MDORRA takes on a limited number of commissions at a time to keep full design involvement through delivery. Selectivity protects the depth of each project."
+      },
+      {
+        "q": "What types of projects do you take on?",
+        "a": "Villas, high-end apartments, offices and commercial spaces where design matters. Commissions are accepted selectively — projects where the design can genuinely make a difference."
+      },
+      {
+        "q": "Do you work outside Egypt?",
+        "a": "Yes. International commissions — including the Gulf — are assessed individually, coordinated remotely and supported on site as the project requires."
+      },
+      {
+        "q": "Do you work with clients remotely?",
+        "a": "Yes. Design is developed digitally with a clear communication cadence, and site presence is scheduled where the project needs it."
+      },
+      {
+        "q": "What does the design process include?",
+        "a": "A defined process: brief, direction, design, development and delivery — with the studio involved through execution."
+      },
+      {
+        "q": "Can you work from existing architectural drawings?",
+        "a": "Yes. The studio works from existing drawings and documentation, integrating the new design with what is already established."
+      },
+      {
+        "q": "Do you handle execution?",
+        "a": "Design is the studio's front-facing work. Execution experience shapes every decision — and where the project calls for it, delivery is part of the service."
+      },
+      {
+        "q": "Do you provide 3D visualization?",
+        "a": "Yes. Visualization is part of the design process — used to test and communicate decisions before anything is built."
+      },
+      {
+        "q": "How do I start a project?",
+        "a": "Write to the studio through the contact page with the project intent and scope. We respond directly, define the first phase precisely, and take on a limited number of commissions at a time."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "From brief to reality.",
+    "lead": "A defined process — we take a brief, set a direction, and develop it into a resolved, buildable design.",
+    "stages": [
+      {
+        "index": "01",
+        "title": "Brief",
+        "description": "The project begins with the essential questions — intent, site, constraints. We study them before a line is drawn."
+      },
+      {
+        "index": "02",
+        "title": "Direction",
+        "description": "One clear design direction, agreed with the client. Decisions are made together, not presented as surprises."
+      },
+      {
+        "index": "03",
+        "title": "Design",
+        "description": "Architecture and interiors developed as one discipline — plans, materials, light and detail resolved in step."
+      },
+      {
+        "index": "04",
+        "title": "Development",
+        "description": "Technical development and coordination. The design is documented so what is agreed is what is built."
+      },
+      {
+        "index": "05",
+        "title": "Delivery",
+        "description": "The studio remains involved through execution, ensuring the built result matches the design."
+      }
+    ]
+  },
+  "beforeAfter": {
+    "eyebrow": "Before / After",
+    "title": "The transformation is the point.",
+    "lead": "A selected project shown before and after design and execution.",
+    "emptyLabel": "Before / After study",
+    "empty": "Transformations are documented on selected commissions. A study will be released here when one is published."
+  }
+}

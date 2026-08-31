@@ -1,0 +1,8 @@
+# sharp must be allowed to build — Next.js requires it for image
+# optimization when running `next start` (self-hosted production).
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': false
+  esbuild: true
+  sharp: true
+  unrs-resolver: false

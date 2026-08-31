@@ -1,0 +1,155 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-newsreader), 'Times New Roman', Georgia, serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, 'SF Mono', 'Cascadia Mono', monospace;
+  --font-arabic: var(--font-noto-arabic), var(--font-sans);
+
+  /* MDORRA Dark Luxury Palette */
+  --color-background: #0a0a09;
+  --color-secondary: #121110;
+  --color-surface: #1a1917;
+  --color-foreground: #f5f3f0;
+  --color-text-secondary: #a8a39c;
+  --color-text-muted: #7a756d;
+  --color-border: #2a2825;
+  --color-border-strong: #3d3a35;
+  --color-border-inverse: rgb(245 243 240 / 0.08);
+  --color-accent: #c8a96a;
+  --color-accent-deep: #b8955a;
+  --color-accent-inverse: #dcc8a0;
+  --color-dark: #050504;
+  --color-dark-secondary: #0d0c0b;
+  --color-inverse-text: #0a0a09;
+  --color-inverse-muted: #5a564e;
+  --color-focus: #c8a96a;
+  --color-focus-inverse: #0a0a09;
+  --color-selection: #c8a96a;
+
+  --container-page: 88rem;
+  --container-measure: 40rem;
+
+  --shadow-board: 0 1px 2px rgb(0 0 0 / 0.3), 0 16px 36px -22px rgb(0 0 0 / 0.5);
+  --shadow-board-lift: 0 1px 3px rgb(0 0 0 / 0.4), 0 26px 48px -22px rgb(0 0 0 / 0.6);
+
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-cinematic: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  --duration-fast: 0.4s;
+  --duration-base: 0.8s;
+  --duration-slow: 1.4s;
+  --duration-cinematic: 2.2s;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+  }
+
+  [dir='rtl'] {
+    font-family: var(--font-arabic);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-selection);
+    color: var(--color-inverse-text);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 3px;
+  }
+
+  [data-surface='dark'] :focus-visible {
+    outline-color: var(--color-focus-inverse);
+  }
+
+  /* Cinematic scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-border-strong);
+  }
+}
+
+@layer components {
+  .container-page {
+    margin-inline: auto;
+    width: 100%;
+    max-width: var(--container-page);
+    padding-inline: clamp(1.5rem, 4vw, 4.5rem);
+  }
+
+  .container-measure {
+    max-width: var(--container-measure);
+  }
+
+  .skip-link {
+    position: fixed;
+    inset-block-start: 0.75rem;
+    inset-inline-start: 0.75rem;
+    z-index: 100;
+    transform: translateY(-300%);
+    background-color: var(--color-foreground);
+    color: var(--color-inverse-text);
+    padding: 0.75rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .skip-link:focus-visible {
+    transform: translateY(0);
+    outline-color: var(--color-focus);
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow-index {
+    color: var(--color-accent);
+  }
+
+  /* The accent bronze on dark surfaces is #7d5c42 (≈3.1:1) — sub-AA for the
+     small mono index numerals. Use the lighter inverse accent for text that
+     sits on dark plates. */
+  [data-surface='dark'] .eyebrow-index {
+    color: var(--color-accent-inverse);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
