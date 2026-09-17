@@ -9,6 +9,12 @@ import { EmptyPlate } from '@/components/global/EmptyPlate';
 import { ProjectIndex } from '@/components/project/ProjectIndex';
 import Image from 'next/image';
 
+const featuredProjectSlugs = new Set([
+  'al-mansour-villa',
+  'al-nour-villa',
+  'horizon-office',
+]);
+
 export async function generateMetadata({ params }: PageProps<'/[locale]/work'>): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'work' });
@@ -30,7 +36,7 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
   setRequestLocale(locale);
 
   const t = await getTranslations({ locale, namespace: 'work' });
-  const projects = getPublishedProjects();
+  const projects = getPublishedProjects().filter((project) => featuredProjectSlugs.has(project.slug));
 
   return (
     <>
@@ -67,7 +73,7 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
                 Curated concepts and realized projects
               </h2>
               <p className="text-text-secondary mt-8 max-w-lg text-base leading-[1.7] md:text-lg">
-                A selection of architectural and interior design concepts exploring materiality, light, and spatial relationships.
+                A focused selection of architectural and interior design concepts exploring materiality, light, and spatial relationships.
               </p>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-secondary">
@@ -77,6 +83,7 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
                 fill
                 className="object-cover"
                 priority
+                sizes="(min-width: 1024px) 50vw, 100vw"
               />
             </div>
           </div>
