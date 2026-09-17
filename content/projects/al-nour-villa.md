@@ -42,18 +42,12 @@ gallery:
   - src: /media/projects/al-nour-villa/Modern_living_room_interior_design_20260917052110.jpeg
     alt: 'Al Nour Private Villa — modern living room'
     caption: 'Living room — expansive glazing and garden views'
-  - src: /media/projects/al-nour-villa/Master_bedroom_suite_interior_de…_20260917052110.jpeg
-    alt: 'Al Nour Private Villa — master bedroom suite'
-    caption: 'Master suite — private terrace with pool views'
   - src: /media/projects/al-nour-villa/Villa_at_blue_hour_20260917052110.jpeg
     alt: 'Al Nour Private Villa — villa at blue hour'
     caption: 'Villa at blue hour — atmospheric evening ambience'
   - src: /media/projects/al-nour-villa/Villa_viewed_from_garden_pool_20260917052110.jpeg
     alt: 'Al Nour Private Villa — viewed from garden pool'
     caption: 'Garden pool view — indoor–outdoor relationship'
-  - src: /media/projects/al-nour-villa/Designing_luxury_Mediterranean_v…_20260917052110.jpeg
-    alt: 'Al Nour Private Villa — Mediterranean villa design'
-    caption: 'Mediterranean villa design concept — sculptural massing and landscape'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Concept floor plan'
