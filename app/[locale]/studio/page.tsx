@@ -19,7 +19,7 @@ export async function generateMetadata({
     path: '/studio',
     locale,
     openGraph: {
-      images: [{ url: '/media/mdorra/inner-pages/02---STUDIO.jpg', width: 1920, height: 1080 }],
+      images: [{ url: '/media/mdorra/inner-pages/02-—-STUDIO.jpg', width: 1920, height: 1080 }],
     },
   });
 }
@@ -38,7 +38,7 @@ export default async function StudioPage(props: PageProps<'/[locale]/studio'>) {
       <Section surface="dark" className="pt-28 pb-16 md:pt-44 md:pb-24 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/media/mdorra/inner-pages/02---STUDIO.jpg"
+            src="/media/mdorra/inner-pages/02-—-STUDIO.jpg"
             alt=""
             fill
             className="object-cover"

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps<'/[locale]/work'>):
     path: '/work',
     locale,
     openGraph: {
-      images: [{ url: '/media/mdorra/inner-pages/01---WORK-HERO.jpg', width: 1920, height: 1080 }],
+      images: [{ url: '/media/mdorra/inner-pages/01-—-WORK-HERO.jpg', width: 1920, height: 1080 }],
     },
   });
 }
@@ -37,7 +37,7 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
       <Section surface="light" className="pt-28 pb-10 md:pt-44 md:pb-16 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/media/mdorra/inner-pages/01---WORK-HERO.jpg"
+            src="/media/mdorra/inner-pages/01-—-WORK-HERO.jpg"
             alt=""
             fill
             className="object-cover"
@@ -72,7 +72,7 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-secondary">
               <Image
-                src="/media/mdorra/inner-pages/07---WORK-SUPPORTING-IMAGE.jpg"
+                src="/media/mdorra/inner-pages/07-—-WORK-SUPPORTING-IMAGE.jpg"
                 alt="Work supporting visual"
                 fill
                 className="object-cover"

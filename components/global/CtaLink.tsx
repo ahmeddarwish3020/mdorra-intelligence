@@ -11,13 +11,13 @@ type CtaLinkProps = {
 
 const variants = {
   solid: {
-    light: 'bg-foreground text-inverse-text hover:bg-accent-deep',
+    light: 'bg-foreground text-dark hover:bg-accent hover:text-inverse-text',
     dark: 'bg-inverse-text text-dark hover:bg-accent hover:text-inverse-text',
   },
   outline: {
     light:
-      'border border-border-strong text-foreground hover:border-accent-deep hover:text-accent-deep',
-    dark: 'border border-border-inverse text-inverse-text hover:border-accent-inverse hover:text-accent-inverse',
+      'border border-border-strong text-foreground hover:border-accent hover:bg-accent hover:text-inverse-text',
+    dark: 'border border-border-inverse text-inverse-text hover:border-accent hover:bg-accent hover:text-inverse-text',
   },
   text: {
     light: 'text-foreground hover:text-accent-deep',
@@ -35,7 +35,7 @@ export function CtaLink({
   return (
     <Link
       href={href}
-      className={`group inline-flex items-center gap-3 py-3.5 font-mono text-xs tracking-wider uppercase transition-colors duration-300 ${
+      className={`group inline-flex min-h-12 items-center gap-3 whitespace-nowrap py-3.5 font-mono text-xs tracking-wider uppercase transition-colors duration-300 ${
         variant === 'text' ? 'px-0' : 'px-7'
       } ${variants[variant][tone]} ${className}`}
     >
@@ -43,7 +43,7 @@ export function CtaLink({
       {variant !== 'text' && (
         <span
           aria-hidden="true"
-          className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1"
+          className="inline-block shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-1 rtl:group-hover:translate-x-[-4px] rtl:rotate-180"
         >
           →
         </span>
