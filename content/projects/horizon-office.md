@@ -11,15 +11,11 @@ scope: Concept architectural design for a contemporary executive office explorin
 summary: >
   A contemporary executive office concept designed around daylight, transparency, hospitality-inspired meeting spaces, and a restrained material palette of stone, timber, and dark metal.
 overview: >
-  The Horizon Office concept reimagines the corporate workspace as a place of calm focus and creative collaboration. The design prioritizes natural light, transparency, and hospitality-inspired gathering spaces within a restrained material palette of stone, timber, and dark metal.
+  The Horizon Executive Office concept reimagines the corporate workspace as a place of calm focus and creative collaboration. The design prioritizes natural light, transparency, and hospitality-inspired gathering spaces within a restrained material palette of stone, timber, and dark metal.
 
-  The plan organizes activity around a central atrium that channels daylight deep into the floor plate. Meeting spaces are designed for hospitality rather than formality, with warm materials and generous proportions encouraging thoughtful conversation.
-
-  Vertical transparency and opaque volumes create a rhythm of openness and privacy across the facade, while interior zones transition seamlessly from focused work areas to collaborative terraces.
 designApproach: >
-  The concept treats the workspace as an architectural environment first and a functional program second. Every element — from the facade articulation to the interior material palette — is designed to support focused work, creative collaboration, and client hospitality.
+  The concept treats the workspace as an architectural environment first and a functional program second. Every element — from facade articulation to the interior material palette — supports focused work, creative collaboration, and client hospitality.
 
-  Stone, timber, and dark metal form a restrained, premium palette. The facade alternates between transparent glazed sections and solid stone volumes, creating a distinctive civic presence while managing solar gain and privacy.
 disciplines:
   - Architecture
   - Interior Design
@@ -27,25 +23,16 @@ disciplines:
 status: published
 hero:
   media:
-    src: /media/projects/horizon-office/Create_Horizon_Office_interior_p…_20260917052748.jpeg
-    alt: 'Horizon Executive Office — workspace perspective'
+    src: /media/projects/horizon-office/cover.jpg
+    alt: 'Horizon Executive Office — architectural perspective'
     width: 2400
     height: 1600
 cover:
-  src: /media/projects/horizon-office/Create_Horizon_Office_interior_p…_20260917052748.jpeg
-  alt: 'Horizon Executive Office — workspace perspective'
+  src: /media/projects/horizon-office/cover.jpg
+  alt: 'Horizon Executive Office — architectural perspective'
   width: 1200
   height: 800
-gallery:
-  - src: /media/projects/horizon-office/Designing_contemporary_office_bu…_20260917052748.jpeg
-    alt: 'Horizon Executive Office — contemporary office building exterior'
-    caption: 'Office building exterior — contemporary architectural design'
-  - src: /media/projects/horizon-office/Create_executive_meeting_room_ph…_20260917052748.jpeg
-    alt: 'Horizon Executive Office — executive meeting room'
-    caption: 'Executive meeting room — warm materials and generous proportions'
-  - src: /media/projects/horizon-office/Photograph_Horizon_Office_interi…_20260917052748.jpeg
-    alt: 'Horizon Executive Office — interior photograph'
-    caption: 'Interior photograph — stone, timber, and dark metal palette'
+gallery: []
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Concept floor plan'
@@ -77,12 +64,12 @@ seo:
   title: 'Horizon Executive Office — MDORRA Concept Design'
   description: 'Contemporary executive office concept in Riyadh. Architecture and design by MDORRA.'
   keywords: ['office design', 'Riyadh workspace', 'executive office', 'concept design']
-  ogImage: /media/projects/horizon-office/Create_Horizon_Office_interior_p…_20260917052748.jpeg
+  ogImage: /media/projects/horizon-office/cover.jpg
 ---
 
-**Concept Project — MDORRA Studio**
+**Horizon Executive Office — Concept Design**
 
-A contemporary executive office concept exploring daylight, transparency, hospitality-inspired meeting spaces, and a restrained palette of stone, timber, and dark metal.
+A contemporary executive workspace exploring daylight, transparency, hospitality-inspired meeting spaces, and a restrained palette of stone, timber, and dark metal.
 
 ## Design Narrative
 The concept reimagines the corporate workspace as a place of calm focus and creative collaboration. Natural light, transparency, and hospitality-inspired gathering spaces shape the experience from arrival through focused work and client meetings.
