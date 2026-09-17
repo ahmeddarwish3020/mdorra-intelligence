@@ -11,13 +11,13 @@ type CtaLinkProps = {
 
 const variants = {
   solid: {
-    light: 'bg-foreground text-inverse-text hover:bg-accent-deep',
+    light: 'bg-foreground text-dark hover:bg-accent hover:text-inverse-text',
     dark: 'bg-inverse-text text-dark hover:bg-accent hover:text-inverse-text',
   },
   outline: {
     light:
-      'border border-border-strong text-foreground hover:border-accent-deep hover:text-accent-deep',
-    dark: 'border border-border-inverse text-inverse-text hover:border-accent-inverse hover:text-accent-inverse',
+      'border border-border-strong text-foreground hover:border-accent hover:bg-accent hover:text-inverse-text',
+    dark: 'border border-border-inverse text-inverse-text hover:border-accent hover:bg-accent hover:text-inverse-text',
   },
   text: {
     light: 'text-foreground hover:text-accent-deep',
