@@ -29,13 +29,7 @@ export function Hero() {
         <div className="grid grid-cols-4 gap-x-5 gap-y-12 md:grid-cols-8 lg:grid-cols-12">
           <div className="col-span-4 lg:col-span-7 lg:col-start-1 xl:col-span-6">
             <Reveal>
-              <p className="text-text-secondary font-mono text-xs tracking-[0.2em] uppercase md:text-sm">
-                ARCHITECTURE &bull; INTERIORS &bull; EXTERIORS
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.05}>
-              <h1 className="mt-8 font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] font-medium tracking-[-0.02em] text-foreground">
+              <h1 className="font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] font-medium tracking-[-0.02em] text-foreground">
                 SPACES DESIGNED
                 <span className="block mt-2 text-accent">WITH INTENTION.</span>
               </h1>
