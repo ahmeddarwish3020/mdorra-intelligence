@@ -1,8 +1,4 @@
 // Central, single source of truth for brand + contact identity.
- //
- // MDORRA is the official brand name. Domain and contact details remain
- // configurable until they are provided — no placeholder values are exposed
- // to production. Do not hardcode the brand name anywhere else.
 
 export type SocialLink = { label: string; href: string };
 
@@ -28,7 +24,7 @@ export const siteConfig: SiteConfig = {
   name: 'MDORRA',
   description:
     'A design studio for architecture and interiors — design developed with construction in mind.',
-  url: 'https://mdorra.vercel.app',
+  url: 'https://mdorra.com',
   locale: 'en',
   themeColor: '#1F1A16',
   backgroundColor: '#1F1A16',
@@ -42,7 +38,6 @@ export const siteConfig: SiteConfig = {
       { label: 'Instagram', href: 'https://www.instagram.com/by.mdorra' },
       { label: 'TikTok', href: 'https://www.tiktok.com/@mdorra.design' },
       { label: 'Facebook', href: 'https://www.facebook.com/mdorra.design' },
-      { label: 'WhatsApp', href: 'https://wa.me/01013125953' },
     ],
     configured: true,
   },
@@ -50,4 +45,10 @@ export const siteConfig: SiteConfig = {
 
 export function isContactConfigured(): boolean {
   return siteConfig.contact.configured;
+}
+
+export function toWhatsAppHref(phone: string): string {
+  const digits = phone.replace(/\D/g, '');
+  const international = digits.startsWith('20') ? digits : `20${digits.replace(/^0/, '')}`;
+  return `https://wa.me/${international}`;
 }
