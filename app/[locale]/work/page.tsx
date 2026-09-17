@@ -70,13 +70,14 @@ export default async function WorkPage(props: PageProps<'/[locale]/work'>) {
                 A selection of architectural and interior design concepts exploring materiality, light, and spatial relationships.
               </p>
             </div>
-            <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-secondary">
+            <div className="relative w-full overflow-hidden">
               <Image
                 src="/media/mdorra/inner-pages/07-—-WORK-SUPPORTING-IMAGE.jpg"
                 alt="Work supporting visual"
                 fill
-                className="object-cover"
+                sizes="(min-width: 1024px) 50vw, (min-width: 768px) 100vw, 100vw"
                 priority
+                className="object-cover"
               />
             </div>
           </div>
