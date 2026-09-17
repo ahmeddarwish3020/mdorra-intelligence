@@ -46,8 +46,8 @@ export function Services() {
               ))}
             </div>
           </div>
-          <Reveal delay={0.12} className="md:col-span-5">
-            <div className="relative w-full overflow-hidden">
+          <Reveal delay={0.12} className="md:col-span-5 w-full">
+            <div className="relative w-full aspect-[4/5] overflow-hidden bg-secondary">
               <Image
                 src="/media/mdorra/inner-pages/03-—-SERVICES.jpg"
                 alt="MDORRA services — architecture and interiors"
