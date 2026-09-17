@@ -34,8 +34,8 @@ export function FinalCta() {
               <p className="text-inverse-muted mt-16 font-mono text-xs tracking-[0.2em] uppercase">Architecture · Interiors · Execution</p>
             </Reveal>
           </div>
-          <Reveal delay={0.12}>
-            <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-dark-secondary md:col-span-5">
+          <Reveal delay={0.12} className="md:col-span-5">
+            <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg bg-dark-secondary">
               <Image
                 src="/media/mdorra/inner-pages/06-—-CONTACT.jpg"
                 alt="MDORRA contact — architecture and interiors"
