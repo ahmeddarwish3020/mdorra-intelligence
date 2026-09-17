@@ -28,7 +28,7 @@ export const siteConfig: SiteConfig = {
   name: 'MDORRA',
   description:
     'A design studio for architecture and interiors — design developed with construction in mind.',
-  url: 'https://mdorra.vercel.app',
+  url: 'https://mdorra.com',
   locale: 'en',
   themeColor: '#1F1A16',
   backgroundColor: '#1F1A16',

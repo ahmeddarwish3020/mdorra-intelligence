@@ -22,9 +22,7 @@ export function ProjectVideo({ video, className = '' }: ProjectVideoProps) {
         preload="metadata"
         className="w-full h-auto object-cover"
         aria-label={video.alt}
-      >
-        <track kind="captions" />
-      </video>
+      />
     </div>
   );
 }
