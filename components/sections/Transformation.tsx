@@ -49,24 +49,13 @@ function TeaserCard({
   );
 }
 
-// Teaser section linking to dedicated Before/After and Process pages.
 export function Transformation() {
-  const beforeAfter = useTranslations('home.beforeAfter');
   const process = useTranslations('home.process');
 
   return (
     <Section surface="light" className="py-24 md:py-40">
       <Container>
         <div className="grid grid-cols-4 gap-x-5 gap-y-10 md:grid-cols-12">
-          <div className="col-span-4 md:col-span-6">
-            <TeaserCard
-              index={beforeAfter('index')}
-              eyebrow={beforeAfter('eyebrow')}
-              title={beforeAfter('title')}
-              lead={beforeAfter('lead')}
-              href="/before-after"
-            />
-          </div>
           <div className="col-span-4 md:col-span-6">
             <TeaserCard
               index={process('index')}

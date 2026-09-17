@@ -21,7 +21,6 @@
       "services": "Services",
       "studio": "Studio",
       "process": "Process",
-      "beforeAfter": "Before / After",
       "faq": "FAQ",
       "contact": "Contact"
     },
@@ -35,61 +34,47 @@
   },
   "home": {
     "hero": {
-      "index": "Architecture · Interiors · Execution",
-      "title": "Design beyond the brief.",
-      "statement": "MDORRA is a design studio for architecture and interiors. We take the brief further, define a stronger direction, and develop it with construction in mind — from first sketch to final detail on site.",
+      "index": "ARCHITECTURE • INTERIORS • EXTERIORS",
+      "title": "MDORRA",
+      "subtitle": "INTERIOR & EXTERIOR DESIGN",
+      "tagline": "Spaces Designed to Make an Impression.",
+      "statement": "Architecture and interior design developed as one continuous discipline. From first concept to final detail, every decision is made with construction in mind.",
       "meta": "Commissions accepted selectively",
-      "cta": "View selected work",
+      "explore": "Explore Projects",
+      "start": "Start Your Project",
       "scroll": "Scroll"
     },
-    "statement": {
-      "eyebrow": "Studio",
-      "index": "01",
-      "quote": "A project is a single continuous decision. Architecture, interiors and construction are developed together — not handed from one discipline to the next.",
-      "body": "A brief is a starting point. We develop it into what the project should be — stronger than the initial idea, and resolved to the last detail. Design is not finished until it is built, so every decision is made with the reality of construction in mind.",
-      "signal": "Design intelligence — technical credibility — quiet execution."
+    "about": {
+      "eyebrow": "About",
+      "index": "04",
+      "title": "We don't just design spaces. We define how they feel.",
+      "body": "MDORRA is an architecture and interior design studio that treats every commission as a creative and technical challenge. From first concept to final detail, we develop spaces that feel deliberate, refined, and unmistakably ours."
     },
     "services": {
-      "eyebrow": "Services",
-      "index": "03",
-      "title": "One studio across the full delivery of a project.",
-      "lead": "Design-led services, every one developed with the reality of construction in mind.",
-      "strip": ["Design", "Visualization", "Technical Design", "Execution capability"],
+      "eyebrow": "WHAT WE DO",
+      "index": "02",
+      "title": "What We Do",
+      "lead": "A curated practice spanning architecture, design, and visualization.",
       "rows": [
         {
           "index": "01",
-          "title": "Architecture",
-          "description": "Architecture as a design discipline — massing, plan, façade and space resolved with intent."
+          "title": "Interior Design",
+          "description": "Concept development, spatial planning, material selection, and bespoke joinery — designed to feel intentional from every angle."
         },
         {
           "index": "02",
-          "title": "Interior Design",
-          "description": "Interior architecture, material and lighting studies, furniture and joinery design."
+          "title": "Exterior Design",
+          "description": "Façade articulation, material expression, and landscape integration — creating buildings that command their context."
         },
         {
           "index": "03",
-          "title": "Concept Development",
-          "description": "The idea comes first. Concepts are tested, argued and strengthened before they are developed."
+          "title": "3D Visualization",
+          "description": "Photorealistic renders and immersive walkthroughs that translate design decisions into tangible experiences before construction."
         },
         {
           "index": "04",
-          "title": "Space Planning",
-          "description": "Plans resolved around how a space is actually used — movement, light and proportion."
-        },
-        {
-          "index": "05",
-          "title": "Design Development",
-          "description": "The design developed in depth — materials, details and finishes decided in step."
-        },
-        {
-          "index": "06",
-          "title": "Technical Design",
-          "description": "Working drawings and construction documentation — the design translated so it can be built as intended."
-        },
-        {
-          "index": "07",
-          "title": "Design Visualization",
-          "description": "3D visualization used to test and communicate decisions before anything is built."
+          "title": "Architectural Design",
+          "description": "Full-scope architecture — from massing and plan to detail and specification, resolved with precision and craft."
         }
       ]
     },
@@ -100,55 +85,47 @@
       "emptyLabel": "Portfolio — selective documentation",
       "empty": "The portfolio is curated, not accumulated. MDORRA documents each commission on its own terms — work is released here as it is delivered."
     },
-"beforeAfter": {
-      "eyebrow": "Before / After",
-      "index": "04",
-      "title": "The transformation is the point.",
-      "lead": "A selected project shown before and after design and execution.",
-      "emptyLabel": "Before / After study",
-      "empty": "Transformations are documented on selected commissions. A study will be released here when one is published."
-    },
     "process": {
-      "eyebrow": "Process",
+      "eyebrow": "FROM VISION TO REALITY",
       "index": "05",
-      "title": "From brief to reality.",
-      "lead": "A defined process — we take a brief, set a direction, and develop it into a resolved, buildable design.",
-      "stages": [
+      "title": "From Vision to Reality",
+      "lead": "A defined process — we take a brief, develop a concept, refine through design, and deliver with precision.",
+      "steps": [
         {
           "index": "01",
-          "title": "Brief",
-          "description": "The project begins with the essential questions — intent, site, constraints. We study them before a line is drawn."
+          "title": "Consultation",
+          "description": "We begin by understanding your vision, site, and constraints. Every great project starts with the right questions."
         },
         {
           "index": "02",
-          "title": "Direction",
-          "description": "One clear design direction, agreed with the client. Decisions are made together, not presented as surprises."
+          "title": "Concept",
+          "description": "A clear design direction emerges — tested, argued, and refined until it captures the essence of the brief."
         },
         {
           "index": "03",
-          "title": "Design",
-          "description": "Architecture and interiors developed as one discipline — plans, materials, light and detail resolved in step."
+          "title": "3D Design",
+          "description": "The concept takes shape through immersive visualization, allowing us to explore materials, light, and space."
         },
         {
           "index": "04",
-          "title": "Development",
-          "description": "Technical development and coordination. The design is documented so what is agreed is what is built."
+          "title": "Revisions",
+          "description": "We refine and iterate with you, ensuring every detail aligns with your vision and our craft."
         },
         {
           "index": "05",
-          "title": "Delivery",
-          "description": "The studio remains involved through execution, ensuring the built result matches the design."
+          "title": "Final Delivery",
+          "description": "The studio remains involved through execution, ensuring the built result matches the intended design."
         }
       ]
     },
     "cta": {
-    "eyebrow": "Enquiries",
-    "index": "06",
-    "title": "Serious projects deserve serious design.",
-    "body": "If you are commissioning a villa, an apartment or a commercial space that demands a stronger result, begin with a conversation.",
-    "primary": "Start your project",
-    "secondary": "View selected work"
-  }
+      "eyebrow": "Enquiries",
+      "index": "06",
+      "title": "Begin with a conversation.",
+      "body": "Commissions are accepted selectively. If you are planning a villa, an apartment, or a commercial space that demands architectural intelligence, we should talk.",
+      "primary": "Start a conversation",
+      "secondary": "View selected work"
+    }
   },
   "work": {
     "eyebrow": "Selected Work",
@@ -204,7 +181,12 @@
         "title": "Execution",
         "body": "The studio stays with the project until the final installation, so the built work matches the intended design."
       }
-    ]
+    ],
+    "eyebrow": "Studio",
+    "index": "01",
+    "quote": "A project is a single continuous decision. Architecture, interiors and construction are developed together — not handed from one discipline to the next.",
+    "body": "A brief is a starting point. We develop it into what the project should be — stronger than the initial idea, and resolved to the last detail. Design is not finished until it is built, so every decision is made with the reality of construction in mind.",
+    "signal": "Design intelligence — technical credibility — quiet execution."
   },
   "services": {
     "eyebrow": "Services",
@@ -255,7 +237,9 @@
     "channelsLabel": "Reach the studio directly",
     "email": "Write to the studio",
     "whatsApp": "Message on WhatsApp",
+    "whatsAppSecondary": "Message on WhatsApp",
     "phone": "Call the studio",
+    "phoneSecondary": "Call the studio",
     "channelsEmpty": "Commissions are accepted selectively and begin with a direct conversation. The studio's email, WhatsApp and social channels are listed here as they open.",
     "note": "We respond to serious enquiries within a few working days.",
     "startingTitle": "A useful first message covers",
@@ -264,7 +248,13 @@
       "The location and approximate scope.",
       "The stage — a new build, a renovation, or an existing space to transform.",
       "Your timeline and how the design should be developed."
-    ]
+    ],
+    "social": {
+      "instagram": "Instagram",
+      "tiktok": "TikTok",
+      "whatsApp": "WhatsApp",
+      "facebook": "Facebook"
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -311,33 +301,33 @@
   },
   "process": {
     "eyebrow": "Process",
-    "title": "From brief to reality.",
-    "lead": "A defined process — we take a brief, set a direction, and develop it into a resolved, buildable design.",
-    "stages": [
+    "title": "From Vision to Reality",
+    "lead": "A defined process — we take a brief, develop a concept, refine through design, and deliver with precision.",
+    "steps": [
       {
         "index": "01",
-        "title": "Brief",
-        "description": "The project begins with the essential questions — intent, site, constraints. We study them before a line is drawn."
+        "title": "Consultation",
+        "description": "We begin by understanding your vision, site, and constraints. Every great project starts with the right questions."
       },
       {
         "index": "02",
-        "title": "Direction",
-        "description": "One clear design direction, agreed with the client. Decisions are made together, not presented as surprises."
+        "title": "Concept",
+        "description": "A clear design direction emerges — tested, argued, and refined until it captures the essence of the brief."
       },
       {
         "index": "03",
-        "title": "Design",
-        "description": "Architecture and interiors developed as one discipline — plans, materials, light and detail resolved in step."
+        "title": "3D Design",
+        "description": "The concept takes shape through immersive visualization, allowing us to explore materials, light, and space."
       },
       {
         "index": "04",
-        "title": "Development",
-        "description": "Technical development and coordination. The design is documented so what is agreed is what is built."
+        "title": "Revisions",
+        "description": "We refine and iterate with you, ensuring every detail aligns with your vision and our craft."
       },
       {
         "index": "05",
-        "title": "Delivery",
-        "description": "The studio remains involved through execution, ensuring the built result matches the design."
+        "title": "Final Delivery",
+        "description": "The studio remains involved through execution, ensuring the built result matches the intended design."
       }
     ]
   },
@@ -347,5 +337,109 @@
     "lead": "A selected project shown before and after design and execution.",
     "emptyLabel": "Before / After study",
     "empty": "Transformations are documented on selected commissions. A study will be released here when one is published."
+  },
+  "selectedWorks": {
+    "eyebrow": "Selected Concepts",
+    "title": "Selected Concepts",
+    "viewAll": "View All Work",
+    "conceptLabel": "CONCEPT",
+    "categories": {
+      "interior": "Interior Design",
+      "architecture": "Architecture"
+    }
+  },
+  "ourApproach": {
+    "eyebrow": "Our Approach",
+    "title": "WE DESIGN FOR THE WAY A SPACE IS EXPERIENCED.",
+    "lead": "Our approach is rooted in the belief that architecture, interiors and exterior elements should speak the same visual language — creating spaces that feel deliberate, refined, and unmistakably ours.",
+    "principles": [
+      {
+        "index": "01",
+        "title": "PURPOSEFUL DESIGN",
+        "description": "Every decision begins with how the space should feel, function and flow."
+      },
+      {
+        "index": "02",
+        "title": "ATTENTION TO DETAIL",
+        "description": "Materials, proportions, lighting and movement are considered as one system."
+      },
+      {
+        "index": "03",
+        "title": "ONE COHESIVE VISION",
+        "description": "Architecture, interiors and exterior elements should speak the same visual language."
+      }
+    ]
+  },
+  "servicesNew": {
+    "eyebrow": "WHAT WE DO",
+    "title": "WHAT WE DO",
+    "lead": "From architecture to interiors and exterior environments, MDORRA brings every layer of a space into one cohesive design vision.",
+    "services": [
+      {
+        "index": "01",
+        "title": "INTERIOR DESIGN",
+        "description": "Concept development, spatial planning, material selection, and bespoke joinery — designed to feel intentional from every angle."
+      },
+      {
+        "index": "02",
+        "title": "EXTERIOR DESIGN",
+        "description": "Façade articulation, material expression, and landscape integration — creating buildings that command their context."
+      },
+      {
+        "index": "03",
+        "title": "ARCHITECTURAL DESIGN",
+        "description": "Full-scope architecture — from massing and plan to detail and specification, resolved with precision and craft."
+      },
+      {
+        "index": "04",
+        "title": "3D VISUALIZATION",
+        "description": "Photorealistic renders and immersive walkthroughs that translate design decisions into tangible experiences before construction."
+      }
+    ]
+  },
+  "processNew": {
+    "eyebrow": "FROM IDEA TO SPACE",
+    "title": "FROM IDEA TO SPACE",
+    "lead": "A defined process — we take a brief, develop a concept, refine through design, and deliver with precision.",
+    "steps": [
+      {
+        "index": "01",
+        "title": "BRIEF",
+        "description": "Understanding the project and its needs."
+      },
+      {
+        "index": "02",
+        "title": "CONCEPT",
+        "description": "Defining the design direction."
+      },
+      {
+        "index": "03",
+        "title": "DESIGN",
+        "description": "Developing the architecture, interiors and visual details."
+      },
+      {
+        "index": "04",
+        "title": "DELIVERY",
+        "description": "Refining the final design and preparing the project for execution."
+      }
+    ]
+  },
+  "aboutNew": {
+    "eyebrow": "ABOUT MDORRA",
+    "title": "DESIGNING SPACES WITH PURPOSE.",
+    "body": "MDORRA brings architecture, interiors and exterior design together through one clear visual language — balancing character, function and detail from the first idea to the final space.",
+    "cta": "ABOUT THE STUDIO"
+  },
+  "finalCta": {
+    "eyebrow": "ENQUIRIES",
+    "title": "Begin with a conversation.",
+    "body": "Commissions are accepted selectively. If you are planning a villa, an apartment, or a commercial space that demands architectural intelligence, we should talk.",
+    "primary": "START A CONVERSATION",
+    "secondary": "VIEW SELECTED WORK"
+  },
+  "footerNew": {
+    "enquiries": "ENQUIRIES",
+    "primaryPhone": "PRIMARY",
+    "secondaryPhone": "SECONDARY"
   }
 }

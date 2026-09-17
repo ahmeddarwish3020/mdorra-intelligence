@@ -1,16 +1,13 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '@/i18n/navigation';
 import { MenuOverlay } from '@/components/global/MenuOverlay';
 import { SiteNav } from '@/components/global/SiteNav';
 import { siteConfig } from '@/lib/site';
 
-// Routes whose first section is a dark surface. Before the header turns into a
-// paper bar on scroll, it must invert so the logo and links stay legible.
-const darkStartPaths = ['/services', '/studio', '/contact', '/process', '/before-after', '/faq'];
+const darkStartPaths = ['/services', '/studio', '/contact', '/process', '/faq'];
 
 function isDarkStart(pathname: string): boolean {
   return darkStartPaths.includes(pathname) || pathname.startsWith('/work/');
@@ -49,30 +46,27 @@ export function Header() {
         <div className="container-page flex h-16 items-center justify-between md:h-20">
           <Link
             href="/"
-            className={`flex items-center transition-colors duration-500 ${brandClass}`}
+            className={`flex flex-col items-start transition-colors duration-500 ${brandClass}`}
             aria-label={siteConfig.name}
           >
-            <Image
-              src="/media/brand/mdorra-logo.png"
-              alt={siteConfig.name}
-              width={120}
-              height={40}
-              className="h-auto max-h-[2.5rem] w-auto md:max-h-[3rem]"
-              style={{ objectFit: 'contain' }}
-              onError={(e) => {
-                e.currentTarget.style.display = 'none';
-                e.currentTarget.nextElementSibling?.classList.remove('hidden');
-              }}
-            />
-            <span className="hidden font-mono text-sm font-medium tracking-[0.25em] uppercase">
+            <span className="font-serif text-xl md:text-2xl font-medium tracking-[0.05em]">
               {siteConfig.name}
-              <span className={inverted ? 'text-accent-inverse' : 'text-accent'}>.</span>
+            </span>
+            <span className="font-mono text-xs tracking-[0.2em] uppercase text-text-secondary mt-0.5 md:mt-1">
+              ARCHITECTURE &bull; INTERIORS &bull; EXTERIORS
             </span>
           </Link>
 
-          <div className="hidden md:block">
+          <div className="hidden md:block ml-auto">
             <SiteNav tone={solid || !inverted ? 'light' : 'dark'} />
           </div>
+
+          <Link
+            href="/contact"
+            className="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-xs font-mono tracking-wider uppercase bg-accent text-inverse-text hover:bg-accent-deep transition-colors duration-300"
+          >
+            START A PROJECT
+          </Link>
 
           <button
             type="button"
@@ -98,3 +92,5 @@ export function Header() {
     </header>
   );
 }
+
+export default Header;

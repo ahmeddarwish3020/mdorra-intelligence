@@ -10,7 +10,6 @@ const links = [
   { href: '/studio', key: 'studio' },
   { href: '/services', key: 'services' },
   { href: '/process', key: 'process' },
-  { href: '/before-after', key: 'beforeAfter' },
   { href: '/faq', key: 'faq' },
   { href: '/contact', key: 'contact' },
 ] as const;

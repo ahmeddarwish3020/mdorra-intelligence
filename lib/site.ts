@@ -16,9 +16,10 @@ export type SiteConfig = {
   contact: {
     email: string;
     phone: string;
+    phoneSecondary: string;
     whatsApp: string;
+    whatsAppSecondary: string;
     socials: SocialLink[];
-    // Set to true when real contact details are provided (not placeholders)
     configured: boolean;
   };
 };
@@ -27,24 +28,23 @@ export const siteConfig: SiteConfig = {
   name: 'MDORRA',
   description:
     'A design studio for architecture and interiors — design developed with construction in mind.',
-  // TODO: Replace with real production domain when purchased
   url: 'https://mdorra.vercel.app',
-  // Default site locale (English-first; Arabic is a planned secondary).
   locale: 'en',
-  // Dark luxury colors mirrored from app/globals.css @theme.
-  themeColor: '#0a0a09',
-  backgroundColor: '#0a0a09',
+  themeColor: '#1F1A16',
+  backgroundColor: '#1F1A16',
   contact: {
-    // TODO: Replace with real contact details before launch
-    email: 'hello@mdorra.com',
-    phone: '+20 10 0000 0000',
-    whatsApp: '201000000000',
+    email: 'mdorra.design@gmail.com',
+    phone: '01013125953',
+    phoneSecondary: '01015864082',
+    whatsApp: '01013125953',
+    whatsAppSecondary: '01015864082',
     socials: [
-      { label: 'Instagram', href: 'https://instagram.com/mdorra' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/company/mdorra' },
+      { label: 'Instagram', href: 'https://www.instagram.com/by.mdorra' },
+      { label: 'TikTok', href: 'https://www.tiktok.com/@mdorra.design' },
+      { label: 'Facebook', href: 'https://www.facebook.com/mdorra.design' },
+      { label: 'WhatsApp', href: 'https://wa.me/01013125953' },
     ],
-    // Set to true only when real contact details are provided
-    configured: false,
+    configured: true,
   },
 };
 

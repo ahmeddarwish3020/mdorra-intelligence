@@ -27,7 +27,7 @@ disciplines:
   - Interior Design
   - Technical Design
   - 3D Visualization
-status: published
+status: draft
 hero:
   media:
     src: /media/placeholder/placeholder-cover.svg
@@ -141,3 +141,13 @@ seo:
   keywords: ['courtyard villa', 'Riyadh architecture', 'Najdi architecture', 'passive design', 'luxury residential']
   ogImage: /media/placeholder/placeholder-cover.svg
 ---
+
+**Concept Project — MDORRA Studio**
+
+This project is a concept portfolio placeholder, not a completed real client project.
+
+## Design Narrative
+The design draws from Najdi architecture's intelligent responses to climate and privacy — thick walls, courtyard organization, screened openings — but translates them into a contemporary language. The courtyard is not a nostalgic reference; it is a performative device that structures the plan, modulates light, and enables cross-ventilation.
+
+## Portfolio Label
+**CONCEPT PROJECT — Replace with a real MDORRA project when available.**

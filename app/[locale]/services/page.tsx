@@ -7,6 +7,7 @@ import { Eyebrow } from '@/components/typography/Eyebrow';
 import { Reveal } from '@/components/motion/Reveal';
 import { SectionCut } from '@/components/motion/SectionCut';
 import { IndexRow } from '@/components/layout/IndexRow';
+import Image from 'next/image';
 
 type ServiceItem = {
   index: string;
@@ -36,6 +37,9 @@ export async function generateMetadata({
     description: t('lead'),
     path: '/services',
     locale,
+    openGraph: {
+      images: [{ url: '/media/mdorra/inner-pages/03---SERVICES.jpg', width: 1920, height: 1080 }],
+    },
   });
 }
 
@@ -50,8 +54,20 @@ export default async function ServicesPage(props: PageProps<'/[locale]/services'
 
   return (
     <>
-      <Section surface="dark" className="pt-28 pb-16 md:pt-44 md:pb-24">
-        <Container>
+      <Section surface="dark" className="pt-28 pb-16 md:pt-44 md:pb-24 relative">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/media/mdorra/inner-pages/03---SERVICES.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+        </div>
+
+        <Container className="relative z-10">
           <Eyebrow>{t('eyebrow')}</Eyebrow>
           <h1 className="text-inverse-text mt-6 max-w-4xl text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[0.98] font-medium tracking-[-0.02em]">
             {t('title')}

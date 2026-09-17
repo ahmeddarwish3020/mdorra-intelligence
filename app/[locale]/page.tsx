@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { createMetadata } from '@/lib/metadata';
 import { siteConfig } from '@/lib/site';
-import { getPublishedProjects } from '@/lib/content';
 import { Hero } from '@/components/sections/Hero';
-import { StudioOverview } from '@/components/sections/StudioOverview';
-import { SelectedWork } from '@/components/sections/SelectedWork';
+import { SelectedWorks } from '@/components/sections/SelectedWorks';
 import { Services } from '@/components/sections/Services';
-import { Transformation } from '@/components/sections/Transformation';
+import { OurApproach } from '@/components/sections/OurApproach';
+import { Process } from '@/components/sections/Process';
+import { About } from '@/components/sections/About';
 import { FinalCta } from '@/components/sections/FinalCta';
 
 export async function generateMetadata({ params }: PageProps<'/[locale]'>): Promise<Metadata> {
@@ -27,15 +27,14 @@ export default async function HomePage(props: PageProps<'/[locale]'>) {
 
   setRequestLocale(locale);
 
-  const projects = getPublishedProjects();
-
   return (
     <>
       <Hero />
-      <StudioOverview />
-      <SelectedWork projects={projects} />
+      <SelectedWorks />
       <Services />
-      <Transformation />
+      <OurApproach />
+      <Process />
+      <About />
       <FinalCta />
     </>
   );

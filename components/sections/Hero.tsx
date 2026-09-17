@@ -1,96 +1,76 @@
 'use client';
 
-import { useRef } from 'react';
-import Image from 'next/image';
-import { useTranslations } from 'next-intl';
-import { Container } from '@/components/layout/Container';
-import { CtaLink } from '@/components/global/CtaLink';
 import { Reveal } from '@/components/motion/Reveal';
-import { SceneFallback } from '@/components/three/SceneFallback';
-import { siteConfig } from '@/lib/site';
+import { CtaLink } from '@/components/global/CtaLink';
+import { Container } from '@/components/layout/Container';
 
 export function Hero() {
-  const t = useTranslations('home.hero');
-  const common = useTranslations('common');
-  const sectionRef = useRef<HTMLElement>(null);
-
   return (
     <section
-      ref={sectionRef}
-      className="relative flex min-h-svh flex-col justify-center overflow-hidden pt-28 pb-10 md:pt-36"
+      id="hero"
+      className="relative flex min-h-svh flex-col overflow-hidden"
     >
-      <div className="absolute inset-0 -z-10" aria-hidden="true">
-        <Image
-          src="/media/hero/pentahouse.png"
-          alt=""
-          fill
-          priority
-          className="object-cover"
-          sizes="(max-width: 639px) 100vw, (max-width: 1023px) 100vw, 1280px"
+      <div className="absolute inset-0 z-0">
+        <video
+          src="/media/mdorra/hero-villa.mp4"
+          poster="/media/mdorra/hero-villa.jpg"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          className="h-full w-full object-cover"
+          aria-hidden="true"
         />
-        <div className="from-background/70 via-background/30 to-background/10 absolute inset-0 bg-gradient-to-t" />
-        <div className="from-background/60 absolute inset-0 bg-gradient-to-r via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/30" />
       </div>
 
-      <Container className="relative z-10 flex-1">
+      <Container className="relative z-10 flex-1 flex flex-col justify-center">
         <div className="grid grid-cols-4 gap-x-5 gap-y-12 md:grid-cols-8 lg:grid-cols-12">
           <div className="col-span-4 lg:col-span-7 lg:col-start-1 xl:col-span-6">
             <Reveal>
               <p className="text-text-secondary font-mono text-xs tracking-[0.2em] uppercase md:text-sm">
-                {t('index')}
+                ARCHITECTURE &bull; INTERIORS &bull; EXTERIORS
               </p>
             </Reveal>
 
             <Reveal delay={0.05}>
-              <p className="text-foreground mt-6 font-mono text-sm font-medium tracking-[0.25em] uppercase">
-                {siteConfig.name}
-                <span className="text-accent">.</span>
-              </p>
-            </Reveal>
-
-            <Reveal delay={0.1}>
-              <h1 className="mt-7 max-w-2xl font-serif text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[0.98] font-medium tracking-[-0.02em] text-balance">
-                {t('title')}
+              <h1 className="mt-8 font-serif text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] font-medium tracking-[-0.02em] text-foreground">
+                SPACES DESIGNED
+                <span className="block mt-2 text-accent">WITH INTENTION.</span>
               </h1>
             </Reveal>
 
-            <Reveal delay={0.16}>
-              <p className="text-text-secondary mt-8 max-w-lg text-base leading-[1.7] md:text-lg text-balance">
-                {t('statement')}
+            <Reveal delay={0.12}>
+              <p className="text-foreground mt-8 max-w-xl text-[clamp(1rem,1.5vw,1.25rem)] leading-[1.7] md:text-lg">
+                MDORRA creates refined architectural, interior and exterior spaces through a clear, detail-driven design approach.
               </p>
             </Reveal>
 
-            <Reveal delay={0.24}>
-              <div className="mt-12 flex flex-wrap gap-x-10 gap-y-4">
+            <Reveal delay={0.2}>
+              <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
                 <CtaLink href="/work" variant="solid" tone="light">
-                  {t('cta')}
+                  EXPLORE OUR WORK
                 </CtaLink>
                 <CtaLink href="/contact" variant="outline" tone="light">
-                  {common('getInTouch')}
+                  START A PROJECT
                 </CtaLink>
               </div>
             </Reveal>
           </div>
-
-          <div className="col-span-4 hidden lg:col-span-5 lg:col-start-9 lg:block xl:col-span-6">
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-lg lg:h-[480px] lg:max-w-md">
-              <SceneFallback />
-            </div>
-          </div>
         </div>
       </Container>
 
-      <div className="border-border mt-12 border-t">
-        <Container>
-          <div className="text-text-secondary flex items-center justify-between py-4 font-mono text-[0.6875rem] tracking-[0.2em] uppercase">
-            <span>{t('meta')}</span>
-            <span className="hidden items-center gap-3 sm:flex">
-              {t('scroll')}
-              <span className="bg-accent h-8 w-px" aria-hidden="true" />
-            </span>
-          </div>
-        </Container>
+      <div className="border-border absolute bottom-8 left-8 md:bottom-12 md:left-12 z-20">
+        <div className="flex items-center gap-3">
+          <span className="bg-accent h-8 w-px" aria-hidden="true" />
+          <span className="font-mono text-[0.625rem] tracking-[0.2em] uppercase text-text-secondary">
+            SCROLL
+          </span>
+        </div>
       </div>
     </section>
   );
 }
+
+export default Hero;

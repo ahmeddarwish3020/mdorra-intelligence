@@ -11,7 +11,7 @@ const subscribe = () => () => {};
 const getServerSnapshot = () => false;
 
 // Stable, subscription-free read of the fine-pointer media query — constant
-// for a session, mirroring useThreeSupport.
+// Stable, subscription-free read of the fine-pointer media query.
 export function usePointerFine(): boolean {
   return useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 }

@@ -6,18 +6,37 @@ import { Section } from '@/components/layout/Section';
 import { Eyebrow } from '@/components/typography/Eyebrow';
 import { Reveal } from '@/components/motion/Reveal';
 import { siteConfig, isContactConfigured } from '@/lib/site';
+import Image from 'next/image';
 
 type Channel = {
   key: string;
   label: string;
   href: string;
   external?: boolean;
+  primary?: boolean;
 };
 
 function buildChannels(t: (key: string) => string): Channel[] {
   const channels: Channel[] = [];
 
-  if (siteConfig.contact.whatsApp) {
+  if (siteConfig.contact.email) {
+    channels.push({ key: 'email', label: t('email'), href: `mailto:${siteConfig.contact.email}`, primary: true });
+  }
+  if (siteConfig.contact.phone) {
+    channels.push({
+      key: 'phone',
+      label: t('phone'),
+      href: `tel:${siteConfig.contact.phone.replace(/[^\d+]/g, '')}`,
+    });
+  }
+  if (siteConfig.contact.phoneSecondary) {
+    channels.push({
+      key: 'phoneSecondary',
+      label: t('phoneSecondary'),
+      href: `tel:${siteConfig.contact.phoneSecondary.replace(/[^\d+]/g, '')}`,
+    });
+  }
+  if (siteConfig.contact.whatsApp && siteConfig.contact.whatsApp !== 'WHATSAPP_NUMBER_PLACEHOLDER') {
     channels.push({
       key: 'whatsApp',
       label: t('whatsApp'),
@@ -25,14 +44,12 @@ function buildChannels(t: (key: string) => string): Channel[] {
       external: true,
     });
   }
-  if (siteConfig.contact.email) {
-    channels.push({ key: 'email', label: t('email'), href: `mailto:${siteConfig.contact.email}` });
-  }
-  if (siteConfig.contact.phone) {
+  if (siteConfig.contact.whatsAppSecondary && siteConfig.contact.whatsAppSecondary !== 'WHATSAPP_NUMBER_PLACEHOLDER') {
     channels.push({
-      key: 'phone',
-      label: t('phone'),
-      href: `tel:${siteConfig.contact.phone.replace(/[^\d+]/g, '')}`,
+      key: 'whatsAppSecondary',
+      label: t('whatsAppSecondary'),
+      href: `https://wa.me/${siteConfig.contact.whatsAppSecondary}`,
+      external: true,
     });
   }
   for (const social of siteConfig.contact.socials) {
@@ -53,6 +70,9 @@ export async function generateMetadata({
     description: t('body'),
     path: '/contact',
     locale,
+    openGraph: {
+      images: [{ url: '/media/mdorra/inner-pages/06---CONTACT.jpg', width: 1920, height: 1080 }],
+    },
   });
 }
 
@@ -64,10 +84,24 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
   const t = await getTranslations({ locale, namespace: 'contact' });
   const configured = isContactConfigured();
   const channels = configured ? buildChannels((key) => t(key)) : [];
+  const rawStarting = t.raw('starting');
+  const starting = Array.isArray(rawStarting) ? rawStarting : [];
 
   return (
-    <Section surface="dark" className="pt-28 pb-32 md:pt-44 md:pb-48">
-      <Container>
+    <Section surface="dark" className="pt-28 pb-32 md:pt-44 md:pb-48 relative">
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/media/mdorra/inner-pages/06---CONTACT.jpg"
+          alt=""
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-background/40" />
+      </div>
+
+      <Container className="relative z-10">
         <div className="max-w-3xl">
           <Reveal>
             <Eyebrow>{t('eyebrow')}</Eyebrow>
@@ -131,7 +165,7 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
                 {t('startingTitle')}
               </p>
               <ul className="text-inverse-muted mt-6 space-y-3 text-sm leading-relaxed md:text-base">
-                {t.raw('starting').map((item: string) => (
+                {starting.map((item: string) => (
                   <li key={item} className="flex items-start gap-4">
                     <span className="bg-accent mt-[0.6em] h-px w-6 shrink-0" aria-hidden="true" />
                     <span>{item}</span>

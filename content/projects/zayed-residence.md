@@ -29,7 +29,7 @@ disciplines:
   - 3D Visualization
   - Technical Design
   - Design Presentation
-status: published
+status: draft
 hero:
   media:
     src: /media/placeholder/placeholder-cover.svg

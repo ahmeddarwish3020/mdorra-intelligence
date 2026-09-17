@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { createMetadata } from '@/lib/metadata';
-import { getProjectBySlug, getPublishedProjects } from '@/lib/content';
+import { getProjectBySlug, getAllProjects } from '@/lib/content';
 import { projectJsonLd } from '@/lib/jsonLd';
 import { siteConfig } from '@/lib/site';
 import { Link } from '@/i18n/navigation';
@@ -20,7 +20,7 @@ import { ProjectScaleBar } from '@/components/project/ProjectScaleBar';
 import { BeforeAfter } from '@/components/media/BeforeAfter';
 
 export async function generateStaticParams() {
-  const projects = getPublishedProjects();
+  const projects = getAllProjects();
   return projects.map((project) => ({ slug: project.slug }));
 }
 
@@ -31,7 +31,7 @@ export async function generateMetadata({
 
   const project = getProjectBySlug(slug);
 
-  if (!project || project.status !== 'published') {
+  if (!project || (project.status !== 'published' && project.status !== 'draft')) {
     return {};
   }
 
@@ -58,20 +58,26 @@ export default async function ProjectPage(props: PageProps<'/[locale]/work/[slug
   const common = await getTranslations({ locale, namespace: 'common' });
   const project = getProjectBySlug(slug);
 
-  if (!project || project.status !== 'published') {
+  if (!project || (project.status !== 'published' && project.status !== 'draft')) {
     notFound();
   }
 
-  const published = getPublishedProjects();
-  const currentIndex = published.findIndex((item) => item.slug === project.slug);
+  const allProjects = getAllProjects();
+  const currentIndex = allProjects.findIndex((item) => item.slug === project.slug);
   const nextProject =
-    published.length > 1 ? published[(currentIndex + 1) % published.length] : undefined;
+    allProjects.length > 1 ? allProjects[(currentIndex + 1) % allProjects.length] : undefined;
 
   const jsonLd = projectJsonLd(project, locale);
 
   return (
     <Section surface="dark">
       <ProjectScaleBar />
+      {project.status === 'draft' && (
+        <div className="border-accent bg-surface mx-4 md:mx-0 mb-4 inline-flex items-center gap-2 rounded px-4 py-2 font-mono text-xs tracking-[0.15em] uppercase text-accent">
+          <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
+          Concept Project
+        </div>
+      )}
       <ProjectHero project={project} />
 
       <div className="pb-24 md:pb-32">
