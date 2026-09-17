@@ -31,9 +31,13 @@ status: published
 hero:
   media:
     src: /media/projects/al-mansour-villa/cover.jpg
-    alt: 'Mansour Courtyard Residence — exterior architectural view'
+    alt: 'Al Mansour Villa — exterior architectural view'
     width: 2400
     height: 1600
+  video:
+    src: /media/projects/al-mansour-villa/Create_architectural_film_sequence_20260917063051.mp4
+    alt: 'Al Mansour Villa — architectural film sequence'
+    poster: /media/projects/al-mansour-villa/cover.jpg
 cover:
   src: /media/projects/al-mansour-villa/cover.jpg
   alt: 'Mansour Courtyard Residence — exterior architectural view'

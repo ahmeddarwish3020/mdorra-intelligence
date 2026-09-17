@@ -24,9 +24,13 @@ status: published
 hero:
   media:
     src: /media/projects/horizon-office/cover.jpg
-    alt: 'Horizon Executive Office — architectural perspective'
+    alt: 'Horizon Office — facade perspective with laptop and architectural drawings'
     width: 2400
     height: 1600
+  video:
+    src: /media/projects/horizon-office/Create_architectural_film_20260917055954.mp4
+    alt: 'Horizon Office — architectural film'
+    poster: /media/projects/horizon-office/cover.jpg
 cover:
   src: /media/projects/horizon-office/cover.jpg
   alt: 'Horizon Executive Office — architectural perspective'

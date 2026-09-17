@@ -19,6 +19,14 @@ export const mediaSchema = z.object({
   height: z.number().int().positive().optional(),
 });
 
+export const videoSchema = z.object({
+  src: z.string().min(1),
+  alt: z.string().min(1),
+  poster: z.string().optional(),
+  width: z.number().int().positive().optional(),
+  height: z.number().int().positive().optional(),
+});
+
 export const galleryImageSchema = mediaSchema.extend({
   caption: z.string().optional(),
 });
@@ -99,6 +107,7 @@ export const projectSchema = z.object({
   hero: z
     .object({
       media: mediaSchema,
+      video: videoSchema.optional(),
     })
     .optional(),
   cover: mediaSchema.optional(),
@@ -125,3 +134,4 @@ export type Material = z.infer<typeof materialSchema>;
 export type ProcessStage = z.infer<typeof processStageSchema>;
 export type ProjectCredit = z.infer<typeof creditEntrySchema>;
 export type BeforeAfterPair = z.infer<typeof beforeAfterSchema>;
+export type ProjectVideo = z.infer<typeof videoSchema>;

@@ -27,9 +27,13 @@ status: published
 hero:
   media:
     src: /media/projects/al-nour-villa/cover.jpg
-    alt: 'Al Nour Private Villa — facade perspective'
+    alt: 'Al Nour Villa — facade perspective'
     width: 2400
     height: 1600
+  video:
+    src: /media/projects/al-nour-villa/Architectural_film_for_private_v._20260917062455.mp4
+    alt: 'Al Nour Villa — architectural film for private villa'
+    poster: /media/projects/al-nour-villa/cover.jpg
 cover:
   src: /media/projects/al-nour-villa/cover.jpg
   alt: 'Al Nour Private Villa — facade perspective'

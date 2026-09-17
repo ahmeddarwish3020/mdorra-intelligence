@@ -9,6 +9,7 @@ import { Link } from '@/i18n/navigation';
 import { Container } from '@/components/layout/Container';
 import { Section } from '@/components/layout/Section';
 import { ProjectHero } from '@/components/project/ProjectHero';
+import { ProjectVideo } from '@/components/project/ProjectVideo';
 import { ProjectSummary } from '@/components/project/ProjectSummary';
 import { ProjectGallery } from '@/components/project/ProjectGallery';
 import { ProjectDrawings } from '@/components/project/ProjectDrawings';
@@ -79,6 +80,14 @@ export default async function ProjectPage(props: PageProps<'/[locale]/work/[slug
         </div>
       )}
       <ProjectHero project={project} />
+
+      {project.hero?.video && (
+        <Section surface="dark" className="py-16 md:py-24">
+          <Container>
+            <ProjectVideo video={project.hero.video} className="aspect-video" />
+          </Container>
+        </Section>
+      )}
 
       <div className="pb-24 md:pb-32">
         {(project.summary || project.overview || project.designApproach) && (
