@@ -40,27 +40,12 @@ cover:
   width: 1200
   height: 800
 gallery:
-  - src: /media/projects/al-mansour-villa/Contemporary_luxury_villa_archit.…_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — exterior architectural view'
-    caption: 'Exterior architectural view — contemporary luxury villa architecture'
-  - src: /media/projects/al-mansour-villa/Villa_architectural_aerial_photo…_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — aerial architectural photo'
-    caption: 'Aerial architectural photo — villa in context'
   - src: /media/projects/al-mansour-villa/Luxury_villa_courtyard_architecture_20260917051408.jpeg
     alt: 'Mansour Courtyard Residence — courtyard architecture'
     caption: 'Courtyard architecture — central garden and loggias'
-  - src: /media/projects/al-mansour-villa/Villa_living_room_interior_archi…_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — living room interior'
-    caption: 'Living room — double-height space with travertine flooring'
-  - src: /media/projects/al-mansour-villa/Contemporary_luxury_master_bedro…_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — master bedroom'
-    caption: 'Master suite — private retreat with luxury finishes'
-  - src: /media/projects/al-mansour-villa/Modern_Arabic_majlis_interior_de…_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — Arabic majlis interior'
-    caption: 'Majlis — traditional proportions with modern detailing'
-  - src: /media/projects/al-mansour-villa/Modern_luxury_villa_architectura…_2K_20260917010210.jpeg_20260917051408.jpeg
-    alt: 'Mansour Courtyard Residence — architectural detail'
-    caption: 'Architectural detail — material, shadow, and massing study'
+  - src: /media/projects/al-mansour-villa/Luxury_villa_with_swimming_pool_20260917051408.jpeg
+    alt: 'Mansour Courtyard Residence — pool landscape'
+    caption: 'Pool landscape — shaded outdoor living and garden relationship'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Ground floor plan'
@@ -74,28 +59,6 @@ drawings:
     alt: 'Section through courtyard'
     caption: 'Section A-A — courtyard spatial logic and ventilation strategy'
     index: 'A-301'
-    hotspots:
-      - x: 45
-        y: 30
-        label: 'Clerestory'
-        title: 'High-level clerestory'
-        detail: 'Brings diffused north light into the courtyard without direct sun penetration.'
-        material: 'Clear glazing with ceramic frit'
-        meta: '2.4 m × 0.6 m'
-      - x: 60
-        y: 65
-        label: 'Loggia'
-        title: 'Deep shaded loggia'
-        detail: '3.6 m depth provides year-round shading to the glazed facade behind.'
-        material: 'Concrete soffit with limestone cladding'
-        meta: '3.6 m projection'
-      - x: 30
-        y: 75
-        label: 'Courtyard Floor'
-        title: 'Courtyard paving'
-        detail: 'Honed limestone pavers with sand-jointed permeable joints for passive cooling.'
-        material: 'Riyadh limestone, honed finish'
-        meta: '600 × 600 mm modules'
 materials:
   - name: 'Riyadh Limestone'
     description: 'Honed finish, used for exterior cladding and courtyard paving. Sourced locally from quarries 40 km from site.'
@@ -107,15 +70,6 @@ materials:
     description: 'Custom profile for windows and doors. Thermal break, double-glazed with low-E coating. Color matches limestone undertones.'
   - name: 'Mashrabiya Screens'
     description: 'CNC-machined solid white oak screens, traditional geometry reinterpreted at architectural scale. Operable for privacy and light control.'
-beforeAfter:
-  before:
-    src: /media/placeholder/placeholder-before.svg
-    alt: 'Site before construction — vacant plot with boundary wall'
-  after:
-    src: /media/placeholder/placeholder-after.svg
-    alt: 'Completed villa — courtyard view'
-    beforeLabel: 'Vacant Plot'
-    afterLabel: 'Completed Villa'
 process:
   - title: Brief
     description: 'Multi-generational family home, strict privacy requirements, courtyard organization, passive climate strategies, local material palette.'
@@ -124,9 +78,9 @@ process:
   - title: Design
     description: 'Developed through physical models, daylight simulations, and thermal analysis. Facade opacity/transparency calibrated per orientation.'
   - title: Development
-    description: 'Coordination with structural (post-tensioned slabs), MEP (underfloor cooling, fresh air), and landscape (native planting).'
+    description: 'Coordination with structural, MEP, and landscape teams.'
   - title: Delivery
-    description: 'Site observation bi-weekly during construction. Material mock-ups approved on site. Final walkthrough with client and contractor.'
+    description: 'Site observation, material mock-ups, coordination, and final client walkthrough.'
 services:
   - Architecture
   - Interior Design
@@ -135,14 +89,6 @@ services:
 credits:
   - role: Architecture & Interior Design
     name: MDORRA
-  - role: Structural Engineering
-    name: Al-Othman Engineering Consultants
-  - role: MEP Engineering
-    name: Delta Consulting Engineers
-  - role: Landscape Design
-    name: Desert Bloom Landscapes
-  - role: Photography
-    name: Khalid Al-Ghamdi
 related: []
 seo:
   title: 'Mansour Courtyard Residence — MDORRA Architecture & Interiors'
