@@ -5,7 +5,6 @@ import { Container } from '@/components/layout/Container';
 import { Section } from '@/components/layout/Section';
 import { Eyebrow } from '@/components/typography/Eyebrow';
 import { Reveal } from '@/components/motion/Reveal';
-import { IndexRow } from '@/components/layout/IndexRow';
 import Image from 'next/image';
 
 export async function generateMetadata({

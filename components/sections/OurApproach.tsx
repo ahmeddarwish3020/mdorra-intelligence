@@ -4,7 +4,6 @@ import { Reveal } from '@/components/motion/Reveal';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
 import { Eyebrow } from '@/components/typography/Eyebrow';
-import Image from 'next/image';
 
 export function OurApproach() {
   return (
