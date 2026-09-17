@@ -18,24 +18,24 @@ type ConceptProject = {
 
 const conceptProjects: ConceptProject[] = [
   {
-    slug: 'contemporary-living',
-    title: 'Contemporary Living',
-    category: 'Interior Design',
-    image: '/media/mdorra/contemporary-living.jpg',
-    ratio: '4/5',
-  },
-  {
-    slug: 'luxury-living',
-    title: 'Luxury Living',
-    category: 'Interior Design',
-    image: '/media/mdorra/luxury-living.jpg',
-    ratio: '4/5',
-  },
-  {
-    slug: 'hero-villa',
-    title: 'Architectural Villa',
+    slug: 'al-nour-villa',
+    title: 'Al Nour Villa',
     category: 'Architecture',
     image: '/media/mdorra/hero-villa.jpg',
+    ratio: '4/5',
+  },
+  {
+    slug: 'al-mansour-villa',
+    title: 'Al Mansour Villa',
+    category: 'Architecture',
+    image: '/media/mdorra/hero-villa.jpg',
+    ratio: '4/5',
+  },
+  {
+    slug: 'horizon-office',
+    title: 'Horizon Office',
+    category: 'Interior Design',
+    image: '/media/mdorra/contemporary-living.jpg',
     ratio: '3/2',
   },
 ];
@@ -60,10 +60,7 @@ export function SelectedWorks() {
             className="group text-inverse-text hover:text-accent-inverse inline-flex items-center gap-3 py-3 font-mono text-xs tracking-wider uppercase transition-colors"
           >
             View All Work
-            <span
-              aria-hidden="true"
-              className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1"
-            >
+            <span aria-hidden="true" className="inline-block transition-transform duration-300 ease-out group-hover:translate-x-1">
               →
             </span>
           </Link>
@@ -81,7 +78,7 @@ export function SelectedWorks() {
                         alt={project.title}
                         fill
                         sizes="(min-width: 1024px) 33vw, 100vw"
-                        className="grayscale transition-transform duration-700 ease-out group-hover:scale-[1.03] group-hover:grayscale-0 object-cover"
+                        className="grayscale object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03] group-hover:grayscale-0"
                         priority={i === 0}
                       />
                     </div>
