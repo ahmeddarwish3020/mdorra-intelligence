@@ -1,6 +1,6 @@
 ---
 slug: al-nour-villa
-title: Al Nour Villa
+title: Al Nour Private Villa
 type: Architecture
 year: 2025
 location: Riyadh, KSA
@@ -11,7 +11,7 @@ scope: Concept design for a luxury villa exploring indoor–outdoor continuity, 
 summary: >
   A contemporary luxury villa concept built around indoor–outdoor continuity, deep shaded terraces, warm stone, expansive glazing, and a resort-like pool courtyard. The composition balances privacy with long axial views toward the garden.
 overview: >
-  The Al Nour Villa concept explores proportion, material contrast, natural light, and a strong relationship between architecture and landscape. The visual direction is intentionally aligned with MDORRA's premium architectural language.
+  The Al Nour Private Villa concept explores proportion, material contrast, natural light, and a strong relationship between architecture and landscape. The visual direction is intentionally aligned with MDORRA's premium architectural language.
 
   Deep overhangs and perforated screens manage solar gain while framing curated views toward the garden courtyard. The spatial choreography balances privacy with openness, creating a sequence of sheltered and revealed moments throughout the residence.
 
@@ -27,36 +27,33 @@ status: published
 hero:
   media:
     src: /media/projects/al-nour-villa/cover.jpg
-    alt: 'Al Nour Villa — facade perspective'
+    alt: 'Al Nour Private Villa — facade perspective'
     width: 2400
     height: 1600
 cover:
   src: /media/projects/al-nour-villa/cover.jpg
-  alt: 'Al Nour Villa — facade perspective'
+  alt: 'Al Nour Private Villa — facade perspective'
   width: 1200
   height: 800
 gallery:
-  - src: /media/projects/al-nour-villa/Front_facade_view_of_villa_20260917052110.jpeg
-    alt: 'Al Nour Villa — facade perspective'
-    caption: 'Facade perspective — street elevation'
   - src: /media/projects/al-nour-villa/Al_Nour_Villa_dining_interior_20260917052110.jpeg
-    alt: 'Al Nour Villa — dining interior'
+    alt: 'Al Nour Private Villa — dining interior'
     caption: 'Dining interior — indoor–outdoor continuity'
   - src: /media/projects/al-nour-villa/Modern_living_room_interior_design_20260917052110.jpeg
-    alt: 'Al Nour Villa — modern living room'
+    alt: 'Al Nour Private Villa — modern living room'
     caption: 'Living room — expansive glazing and garden views'
-  - src: /media/projects/al-nour-villa/Master_bedroom_suite_interior_de._20260917052110.jpeg
-    alt: 'Al Nour Villa — master bedroom suite'
+  - src: /media/projects/al-nour-villa/Master_bedroom_suite_interior_de…_20260917052110.jpeg
+    alt: 'Al Nour Private Villa — master bedroom suite'
     caption: 'Master suite — private terrace with pool views'
   - src: /media/projects/al-nour-villa/Villa_at_blue_hour_20260917052110.jpeg
-    alt: 'Al Nour Villa — villa at blue hour'
+    alt: 'Al Nour Private Villa — villa at blue hour'
     caption: 'Villa at blue hour — atmospheric evening ambience'
   - src: /media/projects/al-nour-villa/Villa_viewed_from_garden_pool_20260917052110.jpeg
-    alt: 'Al Nour Villa — viewed from garden pool'
+    alt: 'Al Nour Private Villa — viewed from garden pool'
     caption: 'Garden pool view — indoor–outdoor relationship'
-  - src: /media/projects/al-nour-villa/Designing_luxury_Mediterranean_v._20260917052110.jpeg
-    alt: 'Al Nour Villa — luxury Mediterranean villa design'
-    caption: 'Luxury Mediterranean villa design concept'
+  - src: /media/projects/al-nour-villa/Designing_luxury_Mediterranean_v…_20260917052110.jpeg
+    alt: 'Al Nour Private Villa — Mediterranean villa design'
+    caption: 'Mediterranean villa design concept — sculptural massing and landscape'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Concept floor plan'
@@ -88,18 +85,18 @@ credits:
     name: MDORRA
 related: []
 seo:
-  title: 'Al Nour Villa — MDORRA Concept Design'
-  description: 'Contemporary luxury villa concept in Riyadh. Architecture, interiors, and visualization by MDORRA — concept portfolio piece.'
+  title: 'Al Nour Private Villa — MDORRA Concept Design'
+  description: 'Contemporary luxury villa concept in Riyadh. Architecture, interiors, and visualization by MDORRA.'
   keywords: ['villa concept', 'Riyadh architecture', 'luxury villa design', 'courtyard residence']
   ogImage: /media/projects/al-nour-villa/cover.jpg
 ---
 
-**Concept Project — MDORRA Studio**
+**Al Nour Private Villa — Concept Design**
 
-This project is a concept portfolio placeholder, not a completed real client project.
+A contemporary Mediterranean villa concept exploring sculptural massing, indoor–outdoor continuity, deep shade, warm stone, and a private garden pool.
 
 ## Design Narrative
-The concept explores proportion, material contrast, natural light, and a strong relationship between architecture and landscape. The visual direction is intentionally aligned with MDORRA's premium architectural language and is intended as temporary portfolio content until the corresponding real MDORRA project is uploaded.
+The concept explores proportion, material contrast, natural light, and a strong relationship between architecture and landscape. Deep overhangs, recessed glazing, and perforated screens create a sequence of sheltered and revealed spaces while preserving privacy.
 
 ## Portfolio Label
-**CONCEPT PROJECT — Replace with a real MDORRA project when available.**
+**AL NOUR PRIVATE VILLA — CONCEPT DESIGN**
