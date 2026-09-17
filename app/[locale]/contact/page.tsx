@@ -52,10 +52,10 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
   const whatsapp = channels.filter((item) => item.key.startsWith('whatsapp'));
   const socials = channels.filter((item) => ['instagram', 'tiktok', 'facebook'].includes(item.key));
 
-  const ChannelLink = ({ channel, large = false }: { channel: Channel; large?: boolean }) => (
-    <a href={channel.href} target={channel.external ? '_blank' : undefined} rel={channel.external ? 'noopener noreferrer' : undefined} aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className={`group flex items-center gap-4 transition-colors ${large ? '' : 'py-3'}`}>
-      <span className={`${large ? 'h-7 w-7' : 'h-5 w-5'} text-accent shrink-0 transition-transform group-hover:scale-105`}>{channel.icon}</span>
-      <span className="min-w-0"><span className="text-inverse-muted block font-mono text-[9px] tracking-[0.16em] uppercase">{channel.label}</span><span className="text-inverse-text mt-1 block break-words text-sm group-hover:text-accent-inverse">{channel.value}</span></span>
+  const IconContact = ({ channel, size = 'md' }: { channel: Channel; size?: 'md' | 'sm' }) => (
+    <a href={channel.href} target={channel.external ? '_blank' : undefined} rel={channel.external ? 'noopener noreferrer' : undefined} aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className="group flex items-center gap-3 transition-colors">
+      <span className={`${size === 'md' ? 'h-6 w-6' : 'h-5 w-5'} text-accent shrink-0 transition-transform group-hover:scale-105`}>{channel.icon}</span>
+      <span className="min-w-0"><span className="text-inverse-muted block font-mono text-[8px] tracking-[0.15em] uppercase">{channel.label}</span><span className="text-inverse-text mt-0.5 block break-all text-xs group-hover:text-accent-inverse">{channel.value}</span></span>
     </a>
   );
 
@@ -69,31 +69,23 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
           <Reveal delay={0.1}><p className="text-inverse-muted mt-8 max-w-2xl text-base leading-[1.7] md:text-lg">{t('body')}</p></Reveal>
 
           {configured && email && <Reveal delay={0.16}>
-            <div className="mt-16 grid gap-px border border-inverse-text/15 bg-inverse-text/15 lg:grid-cols-[1.15fr_.85fr]">
-              <div className="bg-background/75 p-7 backdrop-blur-md md:p-10">
-                <ChannelLink channel={email} large />
-                <div className="mt-9 border-t border-inverse-text/10 pt-6">
-                  <p className="text-inverse-muted font-mono text-[9px] tracking-[0.16em] uppercase">PHONE</p>
-                  <div className="mt-2 divide-y divide-inverse-text/10">{phones.map((channel) => <ChannelLink key={channel.key} channel={channel} />)}</div>
+            <div className="mt-14 grid max-w-4xl gap-px border border-inverse-text/15 bg-inverse-text/15 md:grid-cols-2 lg:max-w-5xl">
+              <div className="bg-background/80 p-6 backdrop-blur-md md:p-8">
+                <div className="flex items-center gap-4 border-b border-inverse-text/10 pb-6">
+                  <span className="h-7 w-7 text-accent">{email.icon}</span>
+                  <div><p className="text-inverse-muted font-mono text-[8px] tracking-[0.16em] uppercase">EMAIL</p><a href={email.href} className="text-inverse-text mt-1 block text-sm hover:text-accent-inverse">{email.value}</a></div>
                 </div>
+                <div className="pt-6"><p className="text-inverse-muted mb-4 font-mono text-[8px] tracking-[0.16em] uppercase">PHONE</p><div className="grid gap-4 sm:grid-cols-2">{phones.map((channel) => <IconContact key={channel.key} channel={channel} />)}</div></div>
               </div>
-              <div className="bg-background/60 p-7 backdrop-blur-md md:p-10">
-                <p className="text-inverse-muted font-mono text-[9px] tracking-[0.16em] uppercase">WHATSAPP</p>
-                <div className="mt-2 divide-y divide-inverse-text/10">{whatsapp.map((channel) => <ChannelLink key={channel.key} channel={channel} />)}</div>
-                <div className="mt-7 border-t border-inverse-text/10 pt-7">
-                  <p className="text-inverse-muted font-mono text-[9px] tracking-[0.16em] uppercase">SOCIAL</p>
-                  <div className="mt-4 grid grid-cols-3 gap-2">{socials.map((channel) => <a key={channel.key} href={channel.href} target="_blank" rel="noopener noreferrer" aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className="group flex h-16 items-center justify-center border border-inverse-text/10 text-inverse-text transition-all hover:-translate-y-0.5 hover:border-accent-inverse hover:text-accent-inverse">{channel.icon}</a>)}</div>
-                </div>
+              <div className="bg-background/65 p-6 backdrop-blur-md md:p-8">
+                <p className="text-inverse-muted mb-4 font-mono text-[8px] tracking-[0.16em] uppercase">WHATSAPP</p>
+                <div className="grid gap-4 sm:grid-cols-2">{whatsapp.map((channel) => <IconContact key={channel.key} channel={channel} />)}</div>
+                <div className="mt-7 border-t border-inverse-text/10 pt-6"><p className="text-inverse-muted mb-3 font-mono text-[8px] tracking-[0.16em] uppercase">SOCIAL</p><div className="flex gap-2">{socials.map((channel) => <a key={channel.key} href={channel.href} target="_blank" rel="noopener noreferrer" aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className="flex h-11 w-11 items-center justify-center border border-inverse-text/10 text-inverse-text transition-all hover:-translate-y-0.5 hover:border-accent-inverse hover:text-accent-inverse">{channel.icon}</a>)}</div></div>
               </div>
             </div>
           </Reveal>}
 
-          <Reveal delay={0.22}>
-            <div className="mt-16 grid gap-10 border-t border-inverse-text/20 pt-10 md:grid-cols-2 md:gap-16">
-              <div><p className="text-inverse-muted font-mono text-[10px] tracking-[0.16em] uppercase">{t('note')}</p><p className="text-inverse-text mt-4 max-w-lg text-lg leading-relaxed md:text-xl">Speak directly with MDORRA about a new project, collaboration, or design consultation.</p></div>
-              <div className="border-inverse-text/20 border-l pl-6 md:pl-10"><p className="text-inverse-text font-mono text-[10px] tracking-[0.16em] uppercase">{t('startingTitle')}</p><ul className="text-inverse-muted mt-5 space-y-3 text-sm leading-relaxed">{starting.map((item: string) => <li key={item} className="flex items-start gap-3"><span className="bg-accent mt-2 h-px w-5 shrink-0"/><span>{item}</span></li>)}</ul></div>
-            </div>
-          </Reveal>
+          <Reveal delay={0.22}><div className="mt-16 grid gap-10 border-t border-inverse-text/20 pt-10 md:grid-cols-2 md:gap-16"><div><p className="text-inverse-muted font-mono text-[10px] tracking-[0.16em] uppercase">{t('note')}</p><p className="text-inverse-text mt-4 max-w-lg text-lg leading-relaxed md:text-xl">Speak directly with MDORRA about a new project, collaboration, or design consultation.</p></div><div className="border-inverse-text/20 border-l pl-6 md:pl-10"><p className="text-inverse-text font-mono text-[10px] tracking-[0.16em] uppercase">{t('startingTitle')}</p><ul className="text-inverse-muted mt-5 space-y-3 text-sm leading-relaxed">{starting.map((item: string) => <li key={item} className="flex items-start gap-3"><span className="bg-accent mt-2 h-px w-5 shrink-0"/><span>{item}</span></li>)}</ul></div></div></Reveal>
         </div>
       </Container>
     </Section>
