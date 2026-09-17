@@ -23,11 +23,11 @@ designApproach: >
 disciplines:
   - Architecture
   - 3D Visualization
-status: draft
+status: published
 hero:
   media:
-    src: /media/placeholder/placeholder-cover.svg
-    alt: 'Al Nour Villa — courtyard view from the living terrace'
+    src: /media/projects/al-nour-villa/cover.jpg
+    alt: 'Al Nour Villa — facade perspective'
     width: 2400
     height: 1600
 cover:
@@ -36,12 +36,27 @@ cover:
   width: 1200
   height: 800
 gallery:
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Courtyard perspective showing terraces and garden'
-    caption: 'Central courtyard — the organizing element of the concept'
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Living terrace opening onto the garden'
-    caption: 'Living terrace — indoor–outdoor continuity'
+  - src: /media/projects/al-nour-villa/Front_facade_view_of_villa_20260917052110.jpeg
+    alt: 'Al Nour Villa — facade perspective'
+    caption: 'Facade perspective — street elevation'
+  - src: /media/projects/al-nour-villa/Al_Nour_Villa_dining_interior_20260917052110.jpeg
+    alt: 'Al Nour Villa — dining interior'
+    caption: 'Dining interior — indoor–outdoor continuity'
+  - src: /media/projects/al-nour-villa/Modern_living_room_interior_design_20260917052110.jpeg
+    alt: 'Al Nour Villa — modern living room'
+    caption: 'Living room — expansive glazing and garden views'
+  - src: /media/projects/al-nour-villa/Master_bedroom_suite_interior_de._20260917052110.jpeg
+    alt: 'Al Nour Villa — master bedroom suite'
+    caption: 'Master suite — private terrace with pool views'
+  - src: /media/projects/al-nour-villa/Villa_at_blue_hour_20260917052110.jpeg
+    alt: 'Al Nour Villa — villa at blue hour'
+    caption: 'Villa at blue hour — atmospheric evening ambience'
+  - src: /media/projects/al-nour-villa/Villa_viewed_from_garden_pool_20260917052110.jpeg
+    alt: 'Al Nour Villa — viewed from garden pool'
+    caption: 'Garden pool view — indoor–outdoor relationship'
+  - src: /media/projects/al-nour-villa/Designing_luxury_Mediterranean_v._20260917052110.jpeg
+    alt: 'Al Nour Villa — luxury Mediterranean villa design'
+    caption: 'Luxury Mediterranean villa design concept'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Concept floor plan'
@@ -76,7 +91,7 @@ seo:
   title: 'Al Nour Villa — MDORRA Concept Design'
   description: 'Contemporary luxury villa concept in Riyadh. Architecture, interiors, and visualization by MDORRA — concept portfolio piece.'
   keywords: ['villa concept', 'Riyadh architecture', 'luxury villa design', 'courtyard residence']
-  ogImage: /media/placeholder/placeholder-cover.svg
+  ogImage: /media/projects/al-nour-villa/cover.jpg
 ---
 
 **Concept Project — MDORRA Studio**

@@ -24,10 +24,10 @@ disciplines:
   - Architecture
   - Interior Design
   - 3D Visualization
-status: draft
+status: published
 hero:
   media:
-    src: /media/placeholder/placeholder-cover.svg
+    src: /media/projects/horizon-office/cover.jpg
     alt: 'Horizon Office — executive workspace perspective'
     width: 2400
     height: 1600
@@ -37,12 +37,18 @@ cover:
   width: 1200
   height: 800
 gallery:
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Central atrium with natural light'
-    caption: 'Central atrium — daylight channels deep into the floor plate'
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Hospitality-inspired meeting space'
-    caption: 'Meeting space — warm materials and generous proportions'
+  - src: /media/projects/horizon-office/Designing_contemporary_office_bu._20260917052748.jpeg
+    alt: 'Horizon Office — contemporary office building exterior'
+    caption: 'Office building exterior — contemporary architectural design'
+  - src: /media/projects/horizon-office/Create_Horizon_Office_interior_p._20260917052748.jpeg
+    alt: 'Horizon Office — interior perspective'
+    caption: 'Interior perspective — hospitality-inspired meeting spaces'
+  - src: /media/projects/horizon-office/Create_executive_meeting_room_ph._20260917052748.jpeg
+    alt: 'Horizon Office — executive meeting room'
+    caption: 'Executive meeting room — warm materials and generous proportions'
+  - src: /media/projects/horizon-office/Photograph_Horizon_Office_interi._20260917052748.jpeg
+    alt: 'Horizon Office — interior photograph'
+    caption: 'Interior photograph — stone, timber, and dark metal palette'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Concept floor plan'
@@ -74,7 +80,7 @@ seo:
   title: 'Horizon Office — MDORRA Concept Design'
   description: 'Contemporary executive office concept in Riyadh. Architecture and design by MDORRA — concept portfolio piece.'
   keywords: ['office design', 'Riyadh workspace', 'executive office', 'concept design']
-  ogImage: /media/placeholder/placeholder-cover.svg
+  ogImage: /media/projects/horizon-office/cover.jpg
 ---
 
 **Concept Project — MDORRA Studio**

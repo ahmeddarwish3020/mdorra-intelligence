@@ -27,31 +27,40 @@ disciplines:
   - Interior Design
   - Technical Design
   - 3D Visualization
-status: draft
+status: published
 hero:
   media:
-    src: /media/placeholder/placeholder-cover.svg
-    alt: 'Al Mansour Villa — courtyard view from the family living room'
+    src: /media/projects/al-mansour-villa/cover.jpg
+    alt: 'Al Mansour Villa — exterior architectural view'
     width: 2400
     height: 1600
 cover:
-  src: /media/placeholder/placeholder-cover.svg
-  alt: 'Al Mansour Villa — street facade'
+  src: /media/projects/al-mansour-villa/cover.jpg
+  alt: 'Al Mansour Villa — exterior architectural view'
   width: 1200
   height: 800
 gallery:
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Courtyard perspective showing loggias and garden'
-    caption: 'Central courtyard — the organizing element of the house'
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Family living room opening onto the courtyard'
-    caption: 'Family living — double-height space with travertine flooring'
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Majlis with traditional proportions and modern detailing'
-    caption: 'Majlis — receiving guests in a space rooted in tradition'
-  - src: /media/placeholder/placeholder-render-1.svg
-    alt: 'Master bedroom with private terrace overlooking courtyard'
-    caption: 'Master suite — private terrace with mashrabiya screens'
+  - src: /media/projects/al-mansour-villa/Contemporary_luxury_villa_archit._20260917051408.jpeg
+    alt: 'Al Mansour Villa — exterior architectural view'
+    caption: 'Exterior architectural view — contemporary luxury villa architecture'
+  - src: /media/projects/al-mansour-villa/Villa_architectural_aerial_photo._20260917051408.jpeg
+    alt: 'Al Mansour Villa — aerial architectural photo'
+    caption: 'Aerial architectural photo — villa in context'
+  - src: /media/projects/al-mansour-villa/Luxury_villa_courtyard_architecture_20260917051408.jpeg
+    alt: 'Al Mansour Villa — courtyard architecture'
+    caption: 'Courtyard architecture — central garden and loggias'
+  - src: /media/projects/al-mansour-villa/Villa_living_room_interior_archi._20260917051408.jpeg
+    alt: 'Al Mansour Villa — living room interior'
+    caption: 'Living room — double-height space with travertine flooring'
+  - src: /media/projects/al-mansour-villa/Contemporary_luxury_master_bedro._20260917051408.jpeg
+    alt: 'Al Mansour Villa — master bedroom'
+    caption: 'Master suite — private retreat with luxury finishes'
+  - src: /media/projects/al-mansour-villa/Modern_Arabic_majlis_interior_de._20260917051408.jpeg
+    alt: 'Al Mansour Villa — Arabic majlis interior'
+    caption: 'Majlis — traditional proportions with modern detailing'
+  - src: /media/projects/al-mansour-villa/Modern_Arabic_majlis_interior_de._20260917051408.jpeg
+    alt: 'Al Mansour Villa — master bedroom suite'
+    caption: 'Master bedroom suite — luxury interior design'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Ground floor plan'
@@ -139,7 +148,7 @@ seo:
   title: 'Al Mansour Villa — MDORRA Architecture & Interiors'
   description: 'Contemporary courtyard villa in Riyadh reinterpreting Najdi spatial principles. Architecture, interiors, and technical design by MDORRA.'
   keywords: ['courtyard villa', 'Riyadh architecture', 'Najdi architecture', 'passive design', 'luxury residential']
-  ogImage: /media/placeholder/placeholder-cover.svg
+  ogImage: /media/projects/al-mansour-villa/cover.jpg
 ---
 
 **Concept Project — MDORRA Studio**
