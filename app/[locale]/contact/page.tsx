@@ -47,17 +47,6 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
   const channels = configured ? buildChannels() : [];
   const rawStarting = t.raw('starting');
   const starting = Array.isArray(rawStarting) ? rawStarting : [];
-  const email = channels.find((item) => item.key === 'email');
-  const phones = channels.filter((item) => item.key.startsWith('phone'));
-  const whatsapp = channels.filter((item) => item.key.startsWith('whatsapp'));
-  const socials = channels.filter((item) => ['instagram', 'tiktok', 'facebook'].includes(item.key));
-
-  const IconContact = ({ channel, size = 'md' }: { channel: Channel; size?: 'md' | 'sm' }) => (
-    <a href={channel.href} target={channel.external ? '_blank' : undefined} rel={channel.external ? 'noopener noreferrer' : undefined} aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className="group flex items-center gap-3 transition-colors">
-      <span className={`${size === 'md' ? 'h-6 w-6' : 'h-5 w-5'} text-accent shrink-0 transition-transform group-hover:scale-105`}>{channel.icon}</span>
-      <span className="min-w-0"><span className="text-inverse-muted block font-mono text-[8px] tracking-[0.15em] uppercase">{channel.label}</span><span className="text-inverse-text mt-0.5 block break-all text-xs group-hover:text-accent-inverse">{channel.value}</span></span>
-    </a>
-  );
 
   return (
     <Section surface="dark" className="relative overflow-hidden pt-28 pb-24 md:pt-44 md:pb-36">
@@ -68,20 +57,25 @@ export default async function ContactPage(props: PageProps<'/[locale]/contact'>)
           <Reveal delay={0.05}><h1 className="text-inverse-text mt-8 max-w-4xl text-[clamp(2.75rem,7vw,6rem)] leading-[0.92] font-medium tracking-[-0.035em]">{t('title')}</h1></Reveal>
           <Reveal delay={0.1}><p className="text-inverse-muted mt-8 max-w-2xl text-base leading-[1.7] md:text-lg">{t('body')}</p></Reveal>
 
-          {configured && email && <Reveal delay={0.16}>
-            <div className="mt-14 grid max-w-4xl gap-px border border-inverse-text/15 bg-inverse-text/15 md:grid-cols-2 lg:max-w-5xl">
-              <div className="bg-background/80 p-6 backdrop-blur-md md:p-8">
-                <div className="flex items-center gap-4 border-b border-inverse-text/10 pb-6">
-                  <span className="h-7 w-7 text-accent">{email.icon}</span>
-                  <div><p className="text-inverse-muted font-mono text-[8px] tracking-[0.16em] uppercase">EMAIL</p><a href={email.href} className="text-inverse-text mt-1 block text-sm hover:text-accent-inverse">{email.value}</a></div>
-                </div>
-                <div className="pt-6"><p className="text-inverse-muted mb-4 font-mono text-[8px] tracking-[0.16em] uppercase">PHONE</p><div className="grid gap-4 sm:grid-cols-2">{phones.map((channel) => <IconContact key={channel.key} channel={channel} />)}</div></div>
-              </div>
-              <div className="bg-background/65 p-6 backdrop-blur-md md:p-8">
-                <p className="text-inverse-muted mb-4 font-mono text-[8px] tracking-[0.16em] uppercase">WHATSAPP</p>
-                <div className="grid gap-4 sm:grid-cols-2">{whatsapp.map((channel) => <IconContact key={channel.key} channel={channel} />)}</div>
-                <div className="mt-7 border-t border-inverse-text/10 pt-6"><p className="text-inverse-muted mb-3 font-mono text-[8px] tracking-[0.16em] uppercase">SOCIAL</p><div className="flex gap-2">{socials.map((channel) => <a key={channel.key} href={channel.href} target="_blank" rel="noopener noreferrer" aria-label={`${channel.label}: ${channel.value}`} title={channel.value} className="flex h-11 w-11 items-center justify-center border border-inverse-text/10 text-inverse-text transition-all hover:-translate-y-0.5 hover:border-accent-inverse hover:text-accent-inverse">{channel.icon}</a>)}</div></div>
-              </div>
+          {configured && <Reveal delay={0.16}>
+            <div className="mt-14 grid grid-cols-2 gap-px border border-inverse-text/15 bg-inverse-text/15 sm:grid-cols-4">
+              {channels.map((channel) => (
+                <a
+                  key={channel.key}
+                  href={channel.href}
+                  target={channel.external ? '_blank' : undefined}
+                  rel={channel.external ? 'noopener noreferrer' : undefined}
+                  aria-label={`${channel.label}: ${channel.value}`}
+                  title={channel.value}
+                  className="group flex min-h-28 flex-col justify-between bg-background/75 p-4 backdrop-blur-md transition-all hover:bg-background/90 sm:min-h-32 sm:p-5"
+                >
+                  <span className="flex h-6 w-6 text-accent transition-transform duration-300 group-hover:scale-110">{channel.icon}</span>
+                  <span className="min-w-0">
+                    <span className="text-inverse-muted block font-mono text-[7px] tracking-[0.15em] uppercase">{channel.label}</span>
+                    <span className="text-inverse-text mt-1 block truncate text-[11px] leading-tight group-hover:text-accent-inverse">{channel.value}</span>
+                  </span>
+                </a>
+              ))}
             </div>
           </Reveal>}
 
