@@ -19,6 +19,12 @@ import { ProjectNext } from '@/components/project/ProjectNext';
 import { ProjectScaleBar } from '@/components/project/ProjectScaleBar';
 import { BeforeAfter } from '@/components/media/BeforeAfter';
 
+const featuredProjectSlugs = new Set([
+  'al-mansour-villa',
+  'al-nour-villa',
+  'horizon-office',
+]);
+
 export async function generateStaticParams() {
   const projects = getAllProjects();
   return projects.map((project) => ({ slug: project.slug }));
@@ -62,10 +68,12 @@ export default async function ProjectPage(props: PageProps<'/[locale]/work/[slug
     notFound();
   }
 
-  const allProjects = getAllProjects();
+  const allProjects = getAllProjects().filter((item) => featuredProjectSlugs.has(item.slug));
   const currentIndex = allProjects.findIndex((item) => item.slug === project.slug);
   const nextProject =
-    allProjects.length > 1 ? allProjects[(currentIndex + 1) % allProjects.length] : undefined;
+    currentIndex >= 0 && allProjects.length > 1
+      ? allProjects[(currentIndex + 1) % allProjects.length]
+      : undefined;
 
   const jsonLd = projectJsonLd(project, locale);
 
