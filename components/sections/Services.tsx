@@ -46,18 +46,20 @@ export function Services() {
               ))}
             </div>
           </div>
-          <Reveal delay={0.12} className="md:col-span-5 w-full">
-            <div className="relative w-full aspect-[4/5] overflow-hidden bg-secondary">
+
+          <div className="md:col-span-5 w-full">
+            <div className="relative isolate min-h-[420px] w-full overflow-hidden bg-secondary md:min-h-[620px]">
               <Image
                 src="/media/mdorra/inner-pages/03-—-SERVICES.jpg"
                 alt="MDORRA services — architecture and interiors"
                 fill
+                unoptimized
                 sizes="(min-width: 1024px) 42vw, (min-width: 768px) 50vw, 100vw"
                 priority
-                className="object-cover"
+                className="object-cover object-center"
               />
             </div>
-          </Reveal>
+          </div>
         </div>
       </Container>
     </Section>
