@@ -1,143 +1,58 @@
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/layout/Container';
 import { Link } from '@/i18n/navigation';
-import { siteConfig } from '@/lib/site';
+import { siteConfig, toWhatsAppHref } from '@/lib/site';
 import type { ReactElement } from 'react';
 
 const socialIcons: Record<string, ReactElement> = {
-  Instagram: (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-    </svg>
-  ),
-  TikTok: (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M15 8.5V17" />
-      <path d="M19.14 8.5a6.06 6.06 0 0 1-1.57 3.35" />
-      <path d="M6.5 15a6.5 6.5 0 0 1-1.57-3.35" />
-      <path d="M9 8.5V17" />
-      <path d="M12.86 15a6.5 6.5 0 0 0 1.57-3.35" />
-      <path d="M18.5 8.5a6.5 6.5 0 0 1-1.57 3.35" />
-    </svg>
-  ),
-  Facebook: (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-    </svg>
-  ),
-  WhatsApp: (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
-    </svg>
-  ),
+  Instagram: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".7" fill="currentColor" stroke="none"/></svg>,
+  TikTok: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><path d="M14 4v10.2a4.1 4.1 0 1 1-3.2-4"/><path d="M14 4c.6 2.2 2 3.6 4 4"/></svg>,
+  Facebook: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true"><path d="M14 21v-8h2.7l.4-3H14V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.6-.1-1.3-.2-2.1-.2-2.7 0-4.5 1.6-4.5 4.6V10H8v3h2.4v8"/></svg>,
 };
 
-const phonePrimary = '01013125953';
-const phoneSecondary = '01015864082';
+const contactIcons = {
+  email: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m4 7 8 6 8-6"/></svg>,
+  phone: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true"><path d="M7 3h3l1.5 4-2 1.5a13 13 0 0 0 6 6l1.5-2L21 14v3c0 2-1.5 4-3.5 4C10 20 4 14 4 6.5 4 4.5 5 3 7 3Z"/></svg>,
+  whatsapp: <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4.2A8 8 0 1 1 20 11.5Z"/><path d="M9 9.5c.5 2 2 3.5 4 4l1-.9"/></svg>,
+};
 
 const navLinks = [
-  { href: '/work', key: 'work' },
-  { href: '/studio', key: 'studio' },
-  { href: '/services', key: 'services' },
-  { href: '/process', key: 'process' },
-  { href: '/faq', key: 'faq' },
-  { href: '/contact', key: 'contact' },
+  { href: '/work', key: 'work' }, { href: '/studio', key: 'studio' }, { href: '/services', key: 'services' },
+  { href: '/process', key: 'process' }, { href: '/faq', key: 'faq' }, { href: '/contact', key: 'contact' },
 ] as const;
 
 export function Footer() {
   const t = useTranslations('common');
   const nav = useTranslations('common.nav');
   const year = new Date().getFullYear();
+  const c = siteConfig.contact;
 
   return (
     <footer className="border-border-inverse bg-dark text-inverse-text border-t">
       <Container className="py-16 md:py-24">
-        <div className="grid grid-cols-4 gap-x-5 gap-y-12 md:grid-cols-12">
-          <div className="col-span-4 md:col-span-6">
-            <p className="font-serif text-xl md:text-2xl font-medium tracking-[0.05em]">
-              {siteConfig.name}
-            </p>
-            <p className="text-inverse-muted mt-5 max-w-xs font-mono text-xs tracking-wider uppercase">
-              {t('footer.tagline')}
-            </p>
+        <div className="grid grid-cols-1 gap-14 md:grid-cols-12 md:gap-x-12">
+          <div className="md:col-span-5">
+            <p className="font-serif text-xl font-medium tracking-[0.05em] md:text-2xl">{siteConfig.name}</p>
+            <p className="text-inverse-muted mt-5 max-w-sm font-mono text-xs uppercase leading-relaxed tracking-wider">{t('footer.tagline')}</p>
           </div>
-
-          <div className="col-span-2 md:col-span-2">
+          <div className="md:col-span-3">
             <h2 className="eyebrow text-inverse-muted">{t('footer.sitemap')}</h2>
-            <nav aria-label={t('navFooter')} className="mt-5">
-              <ul className="space-y-3">
-                {navLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-inverse-text hover:text-accent-inverse text-sm transition-colors"
-                    >
-                      {nav(link.key)}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
+            <nav aria-label={t('navFooter')} className="mt-5"><ul className="space-y-3">{navLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-inverse-text hover:text-accent-inverse text-sm transition-colors">{nav(link.key)}</Link></li>)}</ul></nav>
           </div>
-
-          <div className="col-span-2 md:col-span-4">
-            <h2 className="eyebrow text-inverse-muted">{t('footer.enquiries')}</h2>
-            <div className="mt-5 space-y-3">
-              {siteConfig.contact.email && (
-                <a
-                  href={`mailto:${siteConfig.contact.email}`}
-                  className="text-inverse-text hover:text-accent-inverse font-mono text-xs tracking-wide transition-colors"
-                >
-                  {siteConfig.contact.email}
-                </a>
-              )}
-              <div className="space-y-2">
-                <a
-                  href={`tel:${phonePrimary}`}
-                  className="text-inverse-text hover:text-accent-inverse font-mono text-xs tracking-wide transition-colors flex items-center gap-2"
-                >
-                  <span className="text-accent">PRIMARY</span>
-                  <span>{phonePrimary}</span>
-                </a>
-                <a
-                  href={`tel:${phoneSecondary}`}
-                  className="text-inverse-text hover:text-accent-inverse font-mono text-xs tracking-wide transition-colors flex items-center gap-2"
-                >
-                  <span className="text-accent">SECONDARY</span>
-                  <span>{phoneSecondary}</span>
-                </a>
-              </div>
-              <ul className="flex items-center gap-4 mt-4">
-                {siteConfig.contact.socials.map((social) => (
-                  <li key={social.label}>
-                    <a
-                      href={social.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-inverse-text hover:text-accent-inverse transition-colors duration-300"
-                      aria-label={social.label}
-                    >
-                      {socialIcons[social.label] ?? (
-                        <span className="font-mono text-xs">{social.label}</span>
-                      )}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          <div className="md:col-span-4">
+            <h2 className="eyebrow text-inverse-muted">CONTACT</h2>
+            <div className="mt-5 divide-y divide-inverse-text/10 border-y border-inverse-text/10">
+              <a href={`mailto:${c.email}`} className="group flex items-center gap-4 py-4">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center border border-inverse-text/20 text-inverse-muted transition-colors group-hover:border-accent-inverse group-hover:text-accent-inverse">{contactIcons.email}</span>
+                <span className="min-w-0"><span className="block text-inverse-muted font-mono text-[9px] tracking-[0.16em]">EMAIL</span><span className="mt-1 block break-all text-sm">{c.email}</span></span>
+              </a>
+              <div className="flex items-center gap-4 py-4"><span className="flex h-9 w-9 shrink-0 items-center justify-center border border-inverse-text/20 text-inverse-muted">{contactIcons.phone}</span><span className="min-w-0"><span className="block text-inverse-muted font-mono text-[9px] tracking-[0.16em]">PHONE</span><span className="mt-1 block text-sm leading-6"><a href={`tel:${c.phone}`} className="hover:text-accent-inverse">PRIMARY · {c.phone}</a><br/><a href={`tel:${c.phoneSecondary}`} className="hover:text-accent-inverse">SECONDARY · {c.phoneSecondary}</a></span></span></div>
+              <div className="flex items-center gap-4 py-4"><span className="flex h-9 w-9 shrink-0 items-center justify-center border border-inverse-text/20 text-inverse-muted">{contactIcons.whatsapp}</span><span className="min-w-0"><span className="block text-inverse-muted font-mono text-[9px] tracking-[0.16em]">WHATSAPP</span><span className="mt-1 block text-sm leading-6"><a href={toWhatsAppHref(c.whatsApp)} target="_blank" rel="noopener noreferrer" className="hover:text-accent-inverse">PRIMARY · {c.whatsApp}</a><br/><a href={toWhatsAppHref(c.whatsAppSecondary)} target="_blank" rel="noopener noreferrer" className="hover:text-accent-inverse">SECONDARY · {c.whatsAppSecondary}</a></span></span></div>
             </div>
+            <div className="mt-6 flex items-center gap-3">{c.socials.map((social) => <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label} className="flex h-10 w-10 items-center justify-center border border-inverse-text/20 text-inverse-text transition-colors hover:border-accent-inverse hover:text-accent-inverse">{socialIcons[social.label]}</a>)}</div>
           </div>
         </div>
-
-        <div className="border-border-inverse text-inverse-muted mt-16 flex flex-col gap-3 border-t pt-6 font-mono text-xs md:flex-row md:items-center md:justify-between">
-          <p>
-            © {year} {siteConfig.name} — {t('footer.copyright')}
-          </p>
-          <p className="text-inverse-text font-serif text-base tracking-normal italic">
-            {siteConfig.name}
-          </p>
-        </div>
+        <div className="border-border-inverse text-inverse-muted mt-16 flex flex-col gap-3 border-t pt-6 font-mono text-xs md:flex-row md:items-center md:justify-between"><p>© {year} {siteConfig.name} — {t('footer.copyright')}</p><p className="text-inverse-text font-serif text-base tracking-normal italic">{siteConfig.name}</p></div>
       </Container>
     </footer>
   );
