@@ -1,6 +1,6 @@
 ---
 slug: al-mansour-villa
-title: Al Mansour Villa
+title: Mansour Courtyard Residence
 type: Architecture
 year: 2024
 location: Riyadh, Saudi Arabia
@@ -11,7 +11,7 @@ scope: 'Full architectural and interior design services from concept through con
 summary: >
   A contemporary courtyard villa organized around a central garden, reinterpreting Najdi spatial principles for modern living. The project negotiates privacy, climate, and family life through a careful choreography of solid and void.
 overview: >
-  The Al Mansour Villa sits on a 1,200 m² plot in the Al Olaya district of Riyadh. The brief called for a family home that could accommodate multi-generational living while maintaining strict privacy from the street and neighboring properties. The response is a two-story villa organized around a central courtyard — a spatial device deeply rooted in the region's architectural heritage.
+  The Mansour Courtyard Residence sits on a 1,200 m² plot in the Al Olaya district of Riyadh. The brief called for a family home that could accommodate multi-generational living while maintaining strict privacy from the street and neighboring properties. The response is a two-story villa organized around a central courtyard — a spatial device deeply rooted in the region's architectural heritage.
 
   The courtyard acts as the organizing principle: all primary living spaces face inward, creating a controlled microclimate and a private outdoor room shielded from the harsh sun. The ground floor hosts the majlis, family living, dining, and kitchen, each opening onto the garden through deep, shaded loggias. The upper floor contains the master suite, three bedrooms, and a family lounge, connected by a circulation gallery that overlooks the courtyard below.
 
@@ -31,36 +31,21 @@ status: published
 hero:
   media:
     src: /media/projects/al-mansour-villa/cover.jpg
-    alt: 'Al Mansour Villa — exterior architectural view'
+    alt: 'Mansour Courtyard Residence — exterior architectural view'
     width: 2400
     height: 1600
 cover:
   src: /media/projects/al-mansour-villa/cover.jpg
-  alt: 'Al Mansour Villa — exterior architectural view'
+  alt: 'Mansour Courtyard Residence — exterior architectural view'
   width: 1200
   height: 800
 gallery:
-  - src: /media/projects/al-mansour-villa/Contemporary_luxury_villa_archit._20260917051408.jpeg
-    alt: 'Al Mansour Villa — exterior architectural view'
-    caption: 'Exterior architectural view — contemporary luxury villa architecture'
-  - src: /media/projects/al-mansour-villa/Villa_architectural_aerial_photo._20260917051408.jpeg
-    alt: 'Al Mansour Villa — aerial architectural photo'
-    caption: 'Aerial architectural photo — villa in context'
   - src: /media/projects/al-mansour-villa/Luxury_villa_courtyard_architecture_20260917051408.jpeg
-    alt: 'Al Mansour Villa — courtyard architecture'
+    alt: 'Mansour Courtyard Residence — courtyard architecture'
     caption: 'Courtyard architecture — central garden and loggias'
-  - src: /media/projects/al-mansour-villa/Villa_living_room_interior_archi._20260917051408.jpeg
-    alt: 'Al Mansour Villa — living room interior'
-    caption: 'Living room — double-height space with travertine flooring'
-  - src: /media/projects/al-mansour-villa/Contemporary_luxury_master_bedro._20260917051408.jpeg
-    alt: 'Al Mansour Villa — master bedroom'
-    caption: 'Master suite — private retreat with luxury finishes'
-  - src: /media/projects/al-mansour-villa/Modern_Arabic_majlis_interior_de._20260917051408.jpeg
-    alt: 'Al Mansour Villa — Arabic majlis interior'
-    caption: 'Majlis — traditional proportions with modern detailing'
-  - src: /media/projects/al-mansour-villa/Modern_Arabic_majlis_interior_de._20260917051408.jpeg
-    alt: 'Al Mansour Villa — master bedroom suite'
-    caption: 'Master bedroom suite — luxury interior design'
+  - src: /media/projects/al-mansour-villa/Luxury_villa_with_swimming_pool_20260917051408.jpeg
+    alt: 'Mansour Courtyard Residence — pool landscape'
+    caption: 'Pool landscape — shaded outdoor living and garden relationship'
 drawings:
   - src: /media/placeholder/placeholder-drawing-1.svg
     alt: 'Ground floor plan'
@@ -74,28 +59,6 @@ drawings:
     alt: 'Section through courtyard'
     caption: 'Section A-A — courtyard spatial logic and ventilation strategy'
     index: 'A-301'
-    hotspots:
-      - x: 45
-        y: 30
-        label: 'Clerestory'
-        title: 'High-level clerestory'
-        detail: 'Brings diffused north light into the courtyard without direct sun penetration.'
-        material: 'Clear glazing with ceramic frit'
-        meta: '2.4 m × 0.6 m'
-      - x: 60
-        y: 65
-        label: 'Loggia'
-        title: 'Deep shaded loggia'
-        detail: '3.6 m depth provides year-round shading to the glazed facade behind.'
-        material: 'Concrete soffit with limestone cladding'
-        meta: '3.6 m projection'
-      - x: 30
-        y: 75
-        label: 'Courtyard Floor'
-        title: 'Courtyard paving'
-        detail: 'Honed limestone pavers with sand-jointed permeable joints for passive cooling.'
-        material: 'Riyadh limestone, honed finish'
-        meta: '600 × 600 mm modules'
 materials:
   - name: 'Riyadh Limestone'
     description: 'Honed finish, used for exterior cladding and courtyard paving. Sourced locally from quarries 40 km from site.'
@@ -107,15 +70,6 @@ materials:
     description: 'Custom profile for windows and doors. Thermal break, double-glazed with low-E coating. Color matches limestone undertones.'
   - name: 'Mashrabiya Screens'
     description: 'CNC-machined solid white oak screens, traditional geometry reinterpreted at architectural scale. Operable for privacy and light control.'
-beforeAfter:
-  before:
-    src: /media/placeholder/placeholder-before.svg
-    alt: 'Site before construction — vacant plot with boundary wall'
-  after:
-    src: /media/placeholder/placeholder-after.svg
-    alt: 'Completed villa — courtyard view'
-    beforeLabel: 'Vacant Plot'
-    afterLabel: 'Completed Villa'
 process:
   - title: Brief
     description: 'Multi-generational family home, strict privacy requirements, courtyard organization, passive climate strategies, local material palette.'
@@ -124,9 +78,9 @@ process:
   - title: Design
     description: 'Developed through physical models, daylight simulations, and thermal analysis. Facade opacity/transparency calibrated per orientation.'
   - title: Development
-    description: 'Coordination with structural (post-tensioned slabs), MEP (underfloor cooling, fresh air), and landscape (native planting).'
+    description: 'Coordination with structural, MEP, and landscape teams.'
   - title: Delivery
-    description: 'Site observation bi-weekly during construction. Material mock-ups approved on site. Final walkthrough with client and contractor.'
+    description: 'Site observation, material mock-ups, coordination, and final client walkthrough.'
 services:
   - Architecture
   - Interior Design
@@ -135,28 +89,20 @@ services:
 credits:
   - role: Architecture & Interior Design
     name: MDORRA
-  - role: Structural Engineering
-    name: Al-Othman Engineering Consultants
-  - role: MEP Engineering
-    name: Delta Consulting Engineers
-  - role: Landscape Design
-    name: Desert Bloom Landscapes
-  - role: Photography
-    name: Khalid Al-Ghamdi
 related: []
 seo:
-  title: 'Al Mansour Villa — MDORRA Architecture & Interiors'
+  title: 'Mansour Courtyard Residence — MDORRA Architecture & Interiors'
   description: 'Contemporary courtyard villa in Riyadh reinterpreting Najdi spatial principles. Architecture, interiors, and technical design by MDORRA.'
   keywords: ['courtyard villa', 'Riyadh architecture', 'Najdi architecture', 'passive design', 'luxury residential']
   ogImage: /media/projects/al-mansour-villa/cover.jpg
 ---
 
-**Concept Project — MDORRA Studio**
+**Mansour Courtyard Residence — MDORRA**
 
-This project is a concept portfolio placeholder, not a completed real client project.
+A contemporary courtyard residence translating Najdi spatial intelligence into a restrained, modern architectural language.
 
 ## Design Narrative
-The design draws from Najdi architecture's intelligent responses to climate and privacy — thick walls, courtyard organization, screened openings — but translates them into a contemporary language. The courtyard is not a nostalgic reference; it is a performative device that structures the plan, modulates light, and enables cross-ventilation.
+The design draws from Najdi architecture's intelligent responses to climate and privacy — thick walls, courtyard organization, screened openings — but translates them into a contemporary language. The courtyard structures the plan, modulates light, and enables cross-ventilation while creating a private outdoor room for family life.
 
 ## Portfolio Label
-**CONCEPT PROJECT — Replace with a real MDORRA project when available.**
+**MANSOUR COURTYARD RESIDENCE — ARCHITECTURE & INTERIORS**
