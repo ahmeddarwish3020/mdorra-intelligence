@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
-  <rect width="1200" height="800" fill="#edeae3"/>
-  <rect x="200" y="180" width="340" height="440" fill="#dad5cb"/>
-  <rect x="600" y="260" width="380" height="360" fill="#f7f5f1" stroke="#b5aea0" stroke-width="2"/>
-  <rect x="220" y="380" width="80" height="240" fill="#1b1a17"/>
-  <rect x="360" y="430" width="120" height="190" fill="#8a6a4b"/>
-  <text x="1200" y="770" text-anchor="end" font-family="monospace" font-size="18" fill="#6e685f">PLACEHOLDER — RENDER</text>
-</svg>

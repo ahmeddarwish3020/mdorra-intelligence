@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <!-- MDORRA mark — geometric monogram: two structural legs, a center V,
-       and a single accent datum line. Monochrome-safe. -->
-  <rect width="64" height="64" fill="#15140f" />
-  <g stroke="#f7f5f1" stroke-width="5" stroke-linecap="butt" fill="none">
-    <path d="M17 22 V46 M17 22 L32 34 L47 22 M47 22 V46" />
-  </g>
-  <rect x="21" y="52" width="22" height="1.5" fill="#7d5c42" />
-</svg>
